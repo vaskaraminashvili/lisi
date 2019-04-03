@@ -30,6 +30,7 @@
 						@la_display($module, 'text_en')
 						@la_display($module, 'text_ru')
 						@la_display($module, 'image')
+						@la_display($module, 'slug')
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,7 @@ class CreateHomeSlidersTable extends Migration
             ["text_ka", "text ka", "String", false, "", 0, 256, false],
             ["text_en", "text en", "String", false, "", 0, 256, false],
             ["text_ru", "text ru", "String", false, "", 0, 256, false],
-            ["image", "Image", "Image", false, "", 0, 0, false],
+            ["image_id", "Image", "Image", false, "", 0, 0, false],
             ["active", "Active", "Checkbox", false, "false", 0, 0, true],
         ]);
 		

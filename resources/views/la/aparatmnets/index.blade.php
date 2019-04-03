@@ -62,9 +62,10 @@
 					@la_input($module, 'title_ka')
 					@la_input($module, 'title_en')
 					@la_input($module, 'title_ru')
+					@la_input($module, 'floor')
 					@la_input($module, 'space')
-					@la_input($module, 'floor_id')
 					@la_input($module, 'active')
+					@la_input($module, 'rooms')
 					--}}
 				</div>
 			</div>

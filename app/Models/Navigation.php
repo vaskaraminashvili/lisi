@@ -12,14 +12,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Navigation extends Model
 {
     use SoftDeletes;
-	
+
 	protected $table = 'navigations';
-	
+
 	protected $hidden = [
-        
+
     ];
 
 	protected $guarded = [];
 
 	protected $dates = ['deleted_at'];
+
 }

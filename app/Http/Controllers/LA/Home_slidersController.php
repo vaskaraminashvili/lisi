@@ -23,7 +23,7 @@ class Home_slidersController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'text_ka';
-	public $listing_cols = ['id', 'text_ka', 'text_en', 'text_ru', 'image'];
+	public $listing_cols = ['id', 'text_ka', 'text_en', 'text_ru', 'image_id', 'active'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

@@ -11,11 +11,35 @@
  Target Server Version : 50721
  File Encoding         : 65001
 
- Date: 22/02/2019 17:19:12
+ Date: 12/03/2019 16:11:23
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for about_projects
+-- ----------------------------
+DROP TABLE IF EXISTS `about_projects`;
+CREATE TABLE `about_projects`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `image` int(11) NULL DEFAULT NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `link` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `about_projects_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `about_projects_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of about_projects
+-- ----------------------------
+INSERT INTO `about_projects` VALUES (1, NULL, '2019-03-05 12:13:11', '2019-03-06 08:34:02', 'great project', 'great project  great project', 7, 1, 'https://www.facebook.com/Lisi.Development/');
 
 -- ----------------------------
 -- Table structure for aparatmnets
@@ -30,16 +54,13 @@ CREATE TABLE `aparatmnets`  (
   `title_en` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `title_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `space` int(10) UNSIGNED NULL DEFAULT NULL,
-  `floor_id` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 1,
   `rooms` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '[]',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of aparatmnets
--- ----------------------------
-INSERT INTO `aparatmnets` VALUES (1, NULL, '2019-02-22 13:17:06', '2019-02-22 13:17:06', 'space', NULL, NULL, 20, NULL, 1, '[\"bedroom\",\"kitchen\",\"balcony\"]');
+  `floor` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `aparatmnets_floor_foreign`(`floor`) USING BTREE,
+  CONSTRAINT `aparatmnets_floor_foreign` FOREIGN KEY (`floor`) REFERENCES `floors` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for backups
@@ -88,6 +109,35 @@ INSERT INTO `blocks` VALUES (3, NULL, '2019-02-22 13:01:30', '2019-02-22 13:01:3
 INSERT INTO `blocks` VALUES (4, NULL, '2019-02-22 13:01:46', '2019-02-22 13:01:46', 'block hotel', NULL, NULL, 0, 2, 1, 3);
 
 -- ----------------------------
+-- Table structure for callbacks
+-- ----------------------------
+DROP TABLE IF EXISTS `callbacks`;
+CREATE TABLE `callbacks`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `firstname` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `phone` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `project` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `active` tinyint(1) NULL DEFAULT 0,
+  `email` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of callbacks
+-- ----------------------------
+INSERT INTO `callbacks` VALUES (1, NULL, '2019-03-11 12:26:43', '2019-03-11 12:26:43', 'vas', 're123123', 'lisi', 0, NULL);
+INSERT INTO `callbacks` VALUES (2, NULL, '2019-03-11 12:30:03', '2019-03-11 12:30:03', 'test', '324234234234', 'lisi', 0, NULL);
+INSERT INTO `callbacks` VALUES (3, NULL, '2019-03-11 12:31:20', '2019-03-11 12:31:20', 'test', 'asdasd', 'lisi', 0, NULL);
+INSERT INTO `callbacks` VALUES (4, NULL, '2019-03-11 12:32:21', '2019-03-12 07:05:41', 'vas', '324234234234', 'lisi', 1, NULL);
+INSERT INTO `callbacks` VALUES (5, NULL, '2019-03-12 07:21:39', '2019-03-12 07:21:39', NULL, NULL, NULL, 0, NULL);
+INSERT INTO `callbacks` VALUES (6, NULL, '2019-03-12 07:21:45', '2019-03-12 07:21:45', NULL, NULL, NULL, 0, NULL);
+INSERT INTO `callbacks` VALUES (7, NULL, '2019-03-12 07:22:07', '2019-03-12 07:22:07', NULL, NULL, NULL, 0, NULL);
+INSERT INTO `callbacks` VALUES (8, NULL, '2019-03-12 07:22:58', '2019-03-12 07:22:58', NULL, NULL, NULL, 0, 'vaska@digitalmate.io');
+
+-- ----------------------------
 -- Table structure for catalogs
 -- ----------------------------
 DROP TABLE IF EXISTS `catalogs`;
@@ -101,23 +151,6 @@ CREATE TABLE `catalogs`  (
   `text_ru` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `image` int(11) NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 0,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for company_missions
--- ----------------------------
-DROP TABLE IF EXISTS `company_missions`;
-CREATE TABLE `company_missions`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `deleted_at` timestamp(0) NULL DEFAULT NULL,
-  `created_at` timestamp(0) NULL DEFAULT NULL,
-  `updated_at` timestamp(0) NULL DEFAULT NULL,
-  `text_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
-  `text_en` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
-  `text_ru` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
-  `image` int(11) NULL DEFAULT NULL,
-  `active` tinyint(1) NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
@@ -136,7 +169,12 @@ CREATE TABLE `company_views`  (
   `image` int(11) NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of company_views
+-- ----------------------------
+INSERT INTO `company_views` VALUES (1, NULL, '2019-02-25 11:30:31', '2019-02-25 11:30:31', 'sss', NULL, NULL, 0, 1);
 
 -- ----------------------------
 -- Table structure for departments
@@ -196,12 +234,16 @@ CREATE TABLE `floors`  (
   `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `title_en` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `title_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
-  `block_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
-  `apartments` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `floors_block_id_foreign`(`block_id`) USING BTREE,
-  CONSTRAINT `floors_block_id_foreign` FOREIGN KEY (`block_id`) REFERENCES `blocks` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of floors
+-- ----------------------------
+INSERT INTO `floors` VALUES (1, NULL, '2019-02-25 08:25:46', '2019-02-25 08:25:46', 'pirveli ', 'first', 'pervi');
+INSERT INTO `floors` VALUES (2, NULL, '2019-02-25 08:37:56', '2019-02-25 08:37:56', 'meore', 'second', 'vtaroi');
+INSERT INTO `floors` VALUES (4, NULL, '2019-02-25 08:39:16', '2019-02-25 08:39:16', 'mesame', 'third', 'treti');
+INSERT INTO `floors` VALUES (5, NULL, '2019-02-25 08:39:16', '2019-02-25 08:39:16', 'moetxe', 'fourth', 'chitiri');
 
 -- ----------------------------
 -- Table structure for green_zones
@@ -217,8 +259,26 @@ CREATE TABLE `green_zones`  (
   `title_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `image` int(11) NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 0,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+  `tag_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `green_zones_tag_id_foreign`(`tag_id`) USING BTREE,
+  CONSTRAINT `green_zones_tag_id_foreign` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of green_zones
+-- ----------------------------
+INSERT INTO `green_zones` VALUES (1, NULL, '2019-02-25 11:10:59', '2019-02-26 09:27:38', '80 procenti', '80 Percent', NULL, 3, 1, 1);
+INSERT INTO `green_zones` VALUES (2, NULL, '2019-02-26 09:26:20', '2019-02-26 09:27:30', '20 percent', '20 %', NULL, 0, 1, 1);
+INSERT INTO `green_zones` VALUES (3, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '10', NULL, NULL, 0, 1, 1);
+INSERT INTO `green_zones` VALUES (4, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '20', NULL, NULL, 0, 1, 1);
+INSERT INTO `green_zones` VALUES (5, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '30', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (6, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '40', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (7, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '50', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (8, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '60', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (9, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '70', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (10, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '80', NULL, NULL, 0, 1, 2);
+INSERT INTO `green_zones` VALUES (11, NULL, '2019-02-26 09:26:20', '2019-02-26 09:26:20', '90', NULL, NULL, 0, 1, 2);
 
 -- ----------------------------
 -- Table structure for home_sliders
@@ -232,16 +292,17 @@ CREATE TABLE `home_sliders`  (
   `text_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `text_en` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `text_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
-  `image` int(11) NULL DEFAULT NULL,
+  `image_id` int(11) NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of home_sliders
 -- ----------------------------
 INSERT INTO `home_sliders` VALUES (1, NULL, '2019-02-22 11:22:33', '2019-02-22 11:22:33', 'სლაიდერ', 'Slider', NULL, 2, 1);
 INSERT INTO `home_sliders` VALUES (2, NULL, '2019-02-22 11:23:02', '2019-02-22 11:23:02', 'სლაიდერ 2', 'Slider 2', NULL, 3, 1);
+INSERT INTO `home_sliders` VALUES (3, NULL, '2019-02-25 10:32:27', '2019-02-25 10:32:27', 'სლაიდერ 3', 'slider 3', NULL, 1, 1);
 
 -- ----------------------------
 -- Table structure for la_configs
@@ -289,7 +350,7 @@ CREATE TABLE `la_menus`  (
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 39 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of la_menus
@@ -307,12 +368,147 @@ INSERT INTO `la_menus` VALUES (12, 'Home_sliders', 'home_sliders', 'fa fa-cube',
 INSERT INTO `la_menus` VALUES (14, 'Green_zones', 'green_zones', 'fa fa-cube', 'module', 0, 0, '2019-02-22 11:14:32', '2019-02-22 11:14:32');
 INSERT INTO `la_menus` VALUES (15, 'Catalogs', 'catalogs', 'fa fa-cube', 'module', 0, 0, '2019-02-22 11:27:14', '2019-02-22 11:27:14');
 INSERT INTO `la_menus` VALUES (16, 'Company_views', 'company_views', 'fa fa-cube', 'module', 0, 0, '2019-02-22 11:34:47', '2019-02-22 11:34:47');
-INSERT INTO `la_menus` VALUES (17, 'Company_Missions', 'company_missions', 'fa fa-cube', 'module', 0, 0, '2019-02-22 11:38:51', '2019-02-22 11:38:51');
 INSERT INTO `la_menus` VALUES (18, 'Teams', 'teams', 'fa fa-cube', 'module', 0, 0, '2019-02-22 12:10:03', '2019-02-22 12:10:03');
 INSERT INTO `la_menus` VALUES (19, 'Projects', 'projects', 'fa fa-cube', 'module', 0, 0, '2019-02-22 12:13:18', '2019-02-22 12:13:18');
 INSERT INTO `la_menus` VALUES (20, 'Blocks', 'blocks', 'fa fa-cube', 'module', 0, 0, '2019-02-22 12:25:32', '2019-02-22 12:25:32');
 INSERT INTO `la_menus` VALUES (21, 'Floors', 'floors', 'fa fa-cube', 'module', 0, 0, '2019-02-22 12:53:06', '2019-02-22 12:53:06');
 INSERT INTO `la_menus` VALUES (22, 'Aparatmnets', 'aparatmnets', 'fa fa-cube', 'module', 0, 0, '2019-02-22 12:57:16', '2019-02-22 12:57:16');
+INSERT INTO `la_menus` VALUES (23, 'Tags', 'tags', 'fa fa-tags', 'module', 0, 0, '2019-02-26 09:23:10', '2019-02-26 09:23:10');
+INSERT INTO `la_menus` VALUES (24, 'Text_Images', 'text_images', 'fa fa-cube', 'module', 0, 0, '2019-02-26 10:10:59', '2019-02-26 10:10:59');
+INSERT INTO `la_menus` VALUES (25, 'Landings', 'landings', 'fa fa-cube', 'module', 0, 0, '2019-02-27 07:00:37', '2019-02-27 07:00:37');
+INSERT INTO `la_menus` VALUES (29, 'Landing_Homes', 'landing_homes', 'fa fa-cube', 'module', 0, 0, '2019-03-05 10:56:38', '2019-03-05 10:56:38');
+INSERT INTO `la_menus` VALUES (30, 'Seasons', 'seasons', 'fa fa-cube', 'module', 0, 0, '2019-03-05 11:50:57', '2019-03-05 11:50:57');
+INSERT INTO `la_menus` VALUES (31, 'About_projects', 'about_projects', 'fa fa-cube', 'module', 0, 0, '2019-03-05 12:09:49', '2019-03-05 12:09:49');
+INSERT INTO `la_menus` VALUES (32, 'Landing_socials', 'landing_socials', 'fa fa-cube', 'module', 0, 0, '2019-03-05 12:35:27', '2019-03-05 12:35:27');
+INSERT INTO `la_menus` VALUES (34, 'Landing_footers', 'landing_footers', 'fa fa-cube', 'module', 0, 0, '2019-03-06 08:42:28', '2019-03-06 08:42:28');
+INSERT INTO `la_menus` VALUES (35, 'Project_infos', 'project_infos', 'fa fa-cube', 'module', 0, 0, '2019-03-06 09:09:50', '2019-03-06 09:09:50');
+INSERT INTO `la_menus` VALUES (36, 'Project_summaries', 'project_summaries', 'fa fa-cube', 'module', 0, 0, '2019-03-06 11:10:31', '2019-03-06 11:10:31');
+INSERT INTO `la_menus` VALUES (37, 'Landing_apartments', 'landing_apartments', 'fa fa-cube', 'module', 0, 0, '2019-03-06 12:24:21', '2019-03-06 12:24:21');
+INSERT INTO `la_menus` VALUES (38, 'Callbacks', 'callbacks', 'fa fa-cube', 'module', 0, 0, '2019-03-11 09:53:42', '2019-03-11 09:53:42');
+
+-- ----------------------------
+-- Table structure for landing_apartments
+-- ----------------------------
+DROP TABLE IF EXISTS `landing_apartments`;
+CREATE TABLE `landing_apartments`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `image` int(11) NULL DEFAULT NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `landing_apartments_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `landing_apartments_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of landing_apartments
+-- ----------------------------
+INSERT INTO `landing_apartments` VALUES (1, NULL, '2019-03-06 12:26:07', '2019-03-06 12:26:07', 'Apartment', 'text apartment', 8, 1);
+
+-- ----------------------------
+-- Table structure for landing_footers
+-- ----------------------------
+DROP TABLE IF EXISTS `landing_footers`;
+CREATE TABLE `landing_footers`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `email` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `phone` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `address` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `landing_footers_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `landing_footers_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of landing_footers
+-- ----------------------------
+INSERT INTO `landing_footers` VALUES (1, NULL, '2019-03-06 08:42:55', '2019-03-06 08:42:55', 'lisi@lisi.ge', '+958875 67815', 'Bolsunovska 13-15, Kiev', 1);
+INSERT INTO `landing_footers` VALUES (2, NULL, '2019-03-06 12:43:58', '2019-03-06 12:43:58', 'kokhta@kokhta.ge', '+995778822', 'bakuriani', 2);
+
+-- ----------------------------
+-- Table structure for landing_homes
+-- ----------------------------
+DROP TABLE IF EXISTS `landing_homes`;
+CREATE TABLE `landing_homes`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `image` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `landing_homes_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `landing_homes_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of landing_homes
+-- ----------------------------
+INSERT INTO `landing_homes` VALUES (1, NULL, '2019-03-05 10:57:11', '2019-03-06 08:22:33', 'LIsi is perfect', 'ქართულად ლისი', 1, 6);
+INSERT INTO `landing_homes` VALUES (2, NULL, '2019-03-06 07:30:44', '2019-03-06 12:44:29', 'landing kokhta', 'kokhta text', 2, 8);
+
+-- ----------------------------
+-- Table structure for landing_socials
+-- ----------------------------
+DROP TABLE IF EXISTS `landing_socials`;
+CREATE TABLE `landing_socials`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `facebook` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `twitter` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `instagram` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `youtube` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `landing_socials_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `landing_socials_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of landing_socials
+-- ----------------------------
+INSERT INTO `landing_socials` VALUES (1, NULL, '2019-03-05 12:36:26', '2019-03-05 12:36:26', 'https://www.facebook.com/Lisi.Development/', 'https://www.facebook.com/Lisi.Development/', 'https://www.facebook.com/Lisi.Development/', 'https://www.facebook.com/Lisi.Development/', 'https://www.facebook.com/Lisi.Development/', 1);
+
+-- ----------------------------
+-- Table structure for landings
+-- ----------------------------
+DROP TABLE IF EXISTS `landings`;
+CREATE TABLE `landings`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `landing_home` tinyint(1) NULL DEFAULT 1,
+  `season` tinyint(1) NULL DEFAULT 1,
+  `about_project` tinyint(1) NULL DEFAULT 1,
+  `project_info` tinyint(1) NULL DEFAULT 1,
+  `project_summary` tinyint(1) NULL DEFAULT 1,
+  `landing_apartment` tinyint(1) NULL DEFAULT 1,
+  `footer` tinyint(1) NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of landings
+-- ----------------------------
+INSERT INTO `landings` VALUES (1, NULL, '2019-02-27 07:05:20', '2019-03-06 12:13:58', 'lisi', 1, 1, 1, 1, 1, 1, 0);
+INSERT INTO `landings` VALUES (2, NULL, '2019-02-27 07:05:25', '2019-03-07 08:44:04', 'kokhta', 1, 1, 0, 0, 0, 0, 0);
+INSERT INTO `landings` VALUES (3, NULL, '2019-02-27 07:05:31', '2019-02-27 07:07:09', 'batumi', 1, 1, 1, 1, 1, 1, 1);
+INSERT INTO `landings` VALUES (4, '2019-02-27 09:24:39', '2019-02-27 09:17:31', '2019-02-27 09:24:39', 'lisi', 1, 1, 1, 1, 1, 1, 1);
 
 -- ----------------------------
 -- Table structure for migrations
@@ -410,7 +606,7 @@ CREATE TABLE `module_fields`  (
   INDEX `module_fields_field_type_foreign`(`field_type`) USING BTREE,
   CONSTRAINT `module_fields_field_type_foreign` FOREIGN KEY (`field_type`) REFERENCES `module_field_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `module_fields_module_foreign` FOREIGN KEY (`module`) REFERENCES `modules` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE = InnoDB AUTO_INCREMENT = 118 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 202 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of module_fields
@@ -454,11 +650,11 @@ INSERT INTO `module_fields` VALUES (50, 'menu_ka', 'menu ka', 16, 19, 0, '', 0, 
 INSERT INTO `module_fields` VALUES (51, 'menu_en', 'menu en', 16, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 10:57:36', '2019-02-22 10:57:36');
 INSERT INTO `module_fields` VALUES (52, 'menu_ru', 'menu ru', 16, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 10:57:51', '2019-02-22 10:57:51');
 INSERT INTO `module_fields` VALUES (53, 'active', 'Active', 16, 2, 0, 'true', 0, 0, 0, '', 0, '2019-02-22 10:58:12', '2019-02-22 11:01:10');
-INSERT INTO `module_fields` VALUES (54, 'menu_location', 'menu location', 16, 15, 0, '', 0, 0, 0, '[\"Menu\",\"Burger_Menu\"]', 0, '2019-02-22 10:59:49', '2019-02-22 10:59:49');
+INSERT INTO `module_fields` VALUES (54, 'menu_location', 'menu location', 16, 15, 0, '', 0, 0, 0, '[\"Menu\",\"Burger\",\"Footer\"]', 0, '2019-02-22 10:59:49', '2019-02-25 08:00:50');
 INSERT INTO `module_fields` VALUES (55, 'text_ka', 'text ka', 17, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:05:30', '2019-02-22 11:05:30');
 INSERT INTO `module_fields` VALUES (56, 'text_en', 'text en', 17, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:06:09', '2019-02-22 11:06:09');
 INSERT INTO `module_fields` VALUES (57, 'text_ru', 'text ru', 17, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:06:27', '2019-02-22 11:06:27');
-INSERT INTO `module_fields` VALUES (58, 'image', 'Image', 17, 12, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:07:52', '2019-02-22 11:07:52');
+INSERT INTO `module_fields` VALUES (58, 'image_id', 'Image', 17, 12, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:07:52', '2019-02-25 11:45:48');
 INSERT INTO `module_fields` VALUES (63, 'title_ka', 'Title ka', 19, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:13:24', '2019-02-22 11:13:24');
 INSERT INTO `module_fields` VALUES (64, 'title_en', 'Title en', 19, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:13:38', '2019-02-22 11:13:38');
 INSERT INTO `module_fields` VALUES (65, 'title_ru', 'Title ru', 19, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:13:55', '2019-02-22 11:13:55');
@@ -475,11 +671,6 @@ INSERT INTO `module_fields` VALUES (75, 'text_en', 'Company View Text en', 21, 2
 INSERT INTO `module_fields` VALUES (76, 'text_ru', 'Company View Text ru', 21, 22, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:33:49', '2019-02-22 11:33:49');
 INSERT INTO `module_fields` VALUES (77, 'image', 'Image', 21, 12, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:34:08', '2019-02-22 11:34:08');
 INSERT INTO `module_fields` VALUES (78, 'active', 'Active', 21, 2, 0, 'true', 0, 0, 0, '', 0, '2019-02-22 11:34:30', '2019-02-22 11:34:30');
-INSERT INTO `module_fields` VALUES (79, 'text_ka', 'Company Mission ka', 22, 21, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:35:56', '2019-02-22 11:36:47');
-INSERT INTO `module_fields` VALUES (80, 'text_en', 'Company Mission en', 22, 21, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:37:11', '2019-02-22 11:37:11');
-INSERT INTO `module_fields` VALUES (81, 'text_ru', 'Company Mission ru', 22, 21, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:37:20', '2019-02-22 11:37:20');
-INSERT INTO `module_fields` VALUES (82, 'image', 'Image', 22, 12, 0, '', 0, 0, 0, '', 0, '2019-02-22 11:38:17', '2019-02-22 11:38:17');
-INSERT INTO `module_fields` VALUES (83, 'active', 'Active', 22, 2, 0, 'true', 0, 0, 0, '', 0, '2019-02-22 11:38:38', '2019-02-22 11:38:38');
 INSERT INTO `module_fields` VALUES (84, 'fullname_ka', 'Full name ka', 23, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:50:59', '2019-02-22 11:50:59');
 INSERT INTO `module_fields` VALUES (85, 'full_name en', 'Full name en', 23, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:53:15', '2019-02-22 11:53:15');
 INSERT INTO `module_fields` VALUES (86, 'Full name ru', 'Full name ru', 23, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 11:53:27', '2019-02-22 11:53:27');
@@ -505,15 +696,77 @@ INSERT INTO `module_fields` VALUES (105, 'floors', 'Floors', 25, 13, 0, '', 0, 1
 INSERT INTO `module_fields` VALUES (106, 'title_ka', 'Floor ka', 26, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:50:16', '2019-02-22 12:50:16');
 INSERT INTO `module_fields` VALUES (107, 'title_en', 'Floor en', 26, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:50:48', '2019-02-22 12:50:48');
 INSERT INTO `module_fields` VALUES (108, 'title_ru', 'Floor ru', 26, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:50:59', '2019-02-22 12:50:59');
-INSERT INTO `module_fields` VALUES (109, 'block_id', 'Block', 26, 7, 0, '', 0, 0, 0, '@blocks', 0, '2019-02-22 12:51:34', '2019-02-22 12:51:34');
-INSERT INTO `module_fields` VALUES (110, 'apartments', 'Appartmnets', 26, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:52:11', '2019-02-22 12:52:11');
-INSERT INTO `module_fields` VALUES (111, 'title_ka', 'Title ka', 27, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:54:33', '2019-02-22 12:55:04');
-INSERT INTO `module_fields` VALUES (112, 'title_en', 'Title en', 27, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:55:15', '2019-02-22 12:55:15');
-INSERT INTO `module_fields` VALUES (113, 'title_ru', 'Title ru', 27, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:55:28', '2019-02-22 12:55:28');
-INSERT INTO `module_fields` VALUES (114, 'space', 'Space', 27, 13, 0, '', 0, 11, 0, '', 0, '2019-02-22 12:56:10', '2019-02-22 12:56:10');
-INSERT INTO `module_fields` VALUES (115, 'floor_id', 'Floor', 27, 19, 0, '', 0, 256, 0, '', 0, '2019-02-22 12:56:41', '2019-02-22 12:56:41');
-INSERT INTO `module_fields` VALUES (116, 'active', 'Sold', 27, 2, 0, 'true', 0, 0, 0, '', 0, '2019-02-22 12:57:04', '2019-02-22 12:57:04');
-INSERT INTO `module_fields` VALUES (117, 'rooms', 'Rooms', 27, 15, 0, '', 0, 0, 0, '[\"bedroom\",\"kitchen\",\"balcony\",\"toilet\"]', 0, '2019-02-22 12:59:43', '2019-02-22 12:59:43');
+INSERT INTO `module_fields` VALUES (111, 'title_ka', 'Title ka', 27, 19, 0, '', 0, 256, 0, '', 1, '2019-02-22 12:54:33', '2019-02-22 12:55:04');
+INSERT INTO `module_fields` VALUES (112, 'title_en', 'Title en', 27, 19, 0, '', 0, 256, 0, '', 2, '2019-02-22 12:55:15', '2019-02-22 12:55:15');
+INSERT INTO `module_fields` VALUES (113, 'title_ru', 'Title ru', 27, 19, 0, '', 0, 256, 0, '', 3, '2019-02-22 12:55:28', '2019-02-22 12:55:28');
+INSERT INTO `module_fields` VALUES (114, 'space', 'Space', 27, 13, 0, '', 0, 11, 0, '', 5, '2019-02-22 12:56:10', '2019-02-22 12:56:10');
+INSERT INTO `module_fields` VALUES (116, 'active', 'Sold', 27, 2, 0, 'true', 0, 0, 0, '', 6, '2019-02-22 12:57:04', '2019-02-22 12:57:04');
+INSERT INTO `module_fields` VALUES (117, 'rooms', 'Rooms', 27, 15, 0, '', 0, 0, 0, '[\"bedroom\",\"kitchen\",\"balcony\",\"toilet\"]', 7, '2019-02-22 12:59:43', '2019-02-22 12:59:43');
+INSERT INTO `module_fields` VALUES (120, 'floor', 'Floor', 27, 7, 0, '', 0, 0, 0, '@floors', 4, '2019-02-25 09:18:31', '2019-02-25 09:18:31');
+INSERT INTO `module_fields` VALUES (122, 'slug', 'Slug', 24, 19, 0, '', 0, 256, 0, '', 0, '2019-02-25 12:52:13', '2019-02-25 12:52:13');
+INSERT INTO `module_fields` VALUES (123, 'title', 'Name', 28, 19, 1, '', 0, 256, 1, '', 0, '2019-02-26 09:22:55', '2019-02-26 09:22:55');
+INSERT INTO `module_fields` VALUES (124, 'tag_id', 'Tag', 19, 7, 0, '', 0, 0, 0, '@tags', 0, '2019-02-26 09:26:04', '2019-02-26 09:26:04');
+INSERT INTO `module_fields` VALUES (125, 'title_ka', 'Title', 29, 19, 0, '', 0, 256, 0, '', 0, '2019-02-26 10:08:19', '2019-02-26 10:08:19');
+INSERT INTO `module_fields` VALUES (126, 'title_en', 'Title en', 29, 19, 0, '', 0, 256, 0, '', 0, '2019-02-26 10:08:33', '2019-02-26 10:08:33');
+INSERT INTO `module_fields` VALUES (127, 'title_ru', 'Title ru', 29, 19, 0, '', 0, 256, 0, '', 0, '2019-02-26 10:08:50', '2019-02-26 10:08:50');
+INSERT INTO `module_fields` VALUES (128, 'text_ka', 'Text', 29, 21, 0, '', 0, 0, 0, '', 0, '2019-02-26 10:09:10', '2019-02-26 10:09:10');
+INSERT INTO `module_fields` VALUES (129, 'text_en', 'text en', 29, 21, 0, '', 0, 0, 0, '', 0, '2019-02-26 10:09:23', '2019-02-26 10:09:23');
+INSERT INTO `module_fields` VALUES (130, 'text_ru', 'Text ru', 29, 21, 0, '', 0, 0, 0, '', 0, '2019-02-26 10:09:39', '2019-02-26 10:09:39');
+INSERT INTO `module_fields` VALUES (131, 'image', 'Image', 29, 12, 0, '', 0, 0, 0, '', 0, '2019-02-26 10:09:50', '2019-02-26 10:09:50');
+INSERT INTO `module_fields` VALUES (132, 'active', 'Active', 29, 2, 0, 'true', 0, 0, 0, '', 0, '2019-02-26 10:10:08', '2019-02-26 10:10:08');
+INSERT INTO `module_fields` VALUES (133, 'tag_id', 'Tag', 29, 7, 0, '', 0, 256, 0, '@tags', 0, '2019-02-26 10:10:48', '2019-02-26 10:13:36');
+INSERT INTO `module_fields` VALUES (142, 'title', 'Title', 30, 19, 0, '', 0, 256, 0, '', 1, '2019-02-27 07:06:07', '2019-02-27 07:06:07');
+INSERT INTO `module_fields` VALUES (143, 'landing_home', 'Landing_home', 30, 2, 0, 'true', 0, 0, 0, '', 2, '2019-02-27 09:18:23', '2019-03-05 11:13:32');
+INSERT INTO `module_fields` VALUES (147, 'title_ka', 'Title', 34, 19, 0, '', 0, 256, 0, '', 1, '2019-03-05 10:55:45', '2019-03-05 10:55:45');
+INSERT INTO `module_fields` VALUES (148, 'text_ka', 'Text', 34, 21, 0, '', 0, 0, 0, '', 2, '2019-03-05 10:55:58', '2019-03-05 10:55:58');
+INSERT INTO `module_fields` VALUES (149, 'landing_id', 'Landing', 34, 7, 0, '', 0, 0, 0, '@landings', 4, '2019-03-05 10:56:30', '2019-03-05 10:56:30');
+INSERT INTO `module_fields` VALUES (150, 'title_ka', 'Title', 35, 19, 0, '', 0, 256, 0, '', 1, '2019-03-05 11:49:56', '2019-03-05 11:49:56');
+INSERT INTO `module_fields` VALUES (151, 'text_ka', 'Text', 35, 21, 0, '', 0, 0, 0, '', 2, '2019-03-05 11:50:08', '2019-03-05 11:50:08');
+INSERT INTO `module_fields` VALUES (152, 'landing_id', 'Landing', 35, 7, 0, '', 0, 0, 0, '@landings', 4, '2019-03-05 11:50:41', '2019-03-05 11:50:41');
+INSERT INTO `module_fields` VALUES (153, 'season', 'Season', 30, 2, 0, 'true', 0, 0, 0, '', 3, '2019-03-05 11:52:02', '2019-03-05 12:15:49');
+INSERT INTO `module_fields` VALUES (154, 'about_project', 'About Project', 30, 2, 0, 'true', 0, 0, 0, '', 4, '2019-03-05 11:52:56', '2019-03-05 11:52:56');
+INSERT INTO `module_fields` VALUES (155, 'project_info', 'Project Info', 30, 2, 0, 'true', 0, 0, 0, '', 5, '2019-03-05 11:53:17', '2019-03-05 11:53:17');
+INSERT INTO `module_fields` VALUES (156, 'project_summary', 'Project Summary', 30, 2, 0, 'true', 0, 0, 0, '', 6, '2019-03-05 11:53:50', '2019-03-05 11:53:50');
+INSERT INTO `module_fields` VALUES (157, 'landing_apartment', 'Landing  Apartment', 30, 2, 0, 'true', 0, 0, 0, '', 7, '2019-03-05 11:54:08', '2019-03-06 12:16:51');
+INSERT INTO `module_fields` VALUES (158, 'footer', 'Footer', 30, 2, 0, 'true', 0, 0, 0, '', 8, '2019-03-05 11:54:27', '2019-03-05 11:54:27');
+INSERT INTO `module_fields` VALUES (159, 'title_ka', 'Title', 36, 19, 0, '', 0, 256, 0, '', 1, '2019-03-05 12:08:58', '2019-03-05 12:08:58');
+INSERT INTO `module_fields` VALUES (160, 'text_ka', 'Text', 36, 21, 0, '', 0, 0, 0, '', 2, '2019-03-05 12:09:09', '2019-03-05 12:09:09');
+INSERT INTO `module_fields` VALUES (161, 'image', 'Image', 36, 12, 0, '', 0, 0, 0, '', 3, '2019-03-05 12:09:21', '2019-03-05 12:09:21');
+INSERT INTO `module_fields` VALUES (162, 'landing_id', 'Landing', 36, 7, 0, '', 0, 0, 0, '@landings', 5, '2019-03-05 12:09:39', '2019-03-05 12:09:39');
+INSERT INTO `module_fields` VALUES (163, 'facebook', 'Facebook', 37, 19, 0, '', 0, 256, 0, '', 0, '2019-03-05 12:34:05', '2019-03-05 12:34:05');
+INSERT INTO `module_fields` VALUES (164, 'twitter', 'Twitter', 37, 19, 0, '', 0, 256, 0, '', 0, '2019-03-05 12:34:19', '2019-03-05 12:44:22');
+INSERT INTO `module_fields` VALUES (165, 'instagram', 'Instagram', 37, 19, 0, '', 0, 256, 0, '', 0, '2019-03-05 12:34:39', '2019-03-05 12:34:39');
+INSERT INTO `module_fields` VALUES (166, 'youtube', 'Youtube', 37, 19, 0, '', 0, 256, 0, '', 0, '2019-03-05 12:35:02', '2019-03-05 12:35:02');
+INSERT INTO `module_fields` VALUES (167, 'email', 'Email', 37, 19, 0, '', 0, 256, 0, '', 0, '2019-03-05 12:35:19', '2019-03-05 12:35:19');
+INSERT INTO `module_fields` VALUES (168, 'landing_id', 'Landing', 37, 7, 0, '', 0, 0, 0, '@landings', 0, '2019-03-05 12:37:14', '2019-03-05 12:37:14');
+INSERT INTO `module_fields` VALUES (169, 'image', 'Image', 34, 12, 0, '', 0, 256, 0, '', 3, '2019-03-06 08:21:46', '2019-03-06 08:21:56');
+INSERT INTO `module_fields` VALUES (170, 'image', 'Image', 35, 12, 0, '', 0, 0, 0, '', 3, '2019-03-06 08:23:54', '2019-03-06 08:23:54');
+INSERT INTO `module_fields` VALUES (171, 'link', 'Link', 36, 19, 0, '', 0, 256, 1, '', 4, '2019-03-06 08:32:20', '2019-03-06 08:32:42');
+INSERT INTO `module_fields` VALUES (176, 'email', 'Email', 39, 8, 0, '', 0, 256, 1, '', 0, '2019-03-06 08:41:02', '2019-03-06 08:41:02');
+INSERT INTO `module_fields` VALUES (177, 'phone', 'Phone', 39, 19, 0, '', 0, 256, 1, '', 0, '2019-03-06 08:41:16', '2019-03-06 08:41:16');
+INSERT INTO `module_fields` VALUES (178, 'address', 'Address', 39, 19, 0, '', 0, 256, 1, '', 0, '2019-03-06 08:41:30', '2019-03-06 08:41:30');
+INSERT INTO `module_fields` VALUES (179, 'landing_id', 'Landing', 39, 7, 0, '', 0, 0, 0, '@landings', 0, '2019-03-06 08:42:18', '2019-03-06 08:42:18');
+INSERT INTO `module_fields` VALUES (180, 'title_ka', 'Title', 40, 19, 0, '', 0, 256, 0, '', 0, '2019-03-06 09:08:00', '2019-03-06 09:08:00');
+INSERT INTO `module_fields` VALUES (181, 'text_ka', 'Text', 40, 21, 0, '', 0, 0, 0, '', 0, '2019-03-06 09:08:15', '2019-03-06 09:08:15');
+INSERT INTO `module_fields` VALUES (182, 'icon', 'Icon', 40, 22, 0, '', 0, 256, 0, '', 0, '2019-03-06 09:08:34', '2019-03-06 09:08:34');
+INSERT INTO `module_fields` VALUES (184, 'landing_id', 'Landing', 40, 7, 0, '', 0, 0, 0, '@landings', 0, '2019-03-06 09:09:36', '2019-03-06 09:09:36');
+INSERT INTO `module_fields` VALUES (185, 'title_ka', 'Title', 41, 19, 0, '', 0, 256, 0, '', 0, '2019-03-06 11:07:13', '2019-03-06 11:16:53');
+INSERT INTO `module_fields` VALUES (186, 'text_ka', 'Text', 41, 21, 0, '', 0, 0, 0, '', 0, '2019-03-06 11:07:27', '2019-03-06 11:07:27');
+INSERT INTO `module_fields` VALUES (187, 'sub_text', 'Sub Text', 41, 19, 0, '', 0, 256, 0, '', 0, '2019-03-06 11:08:21', '2019-03-06 11:14:50');
+INSERT INTO `module_fields` VALUES (188, 'prefix', 'Prefix', 41, 19, 0, '', 0, 3, 0, '', 0, '2019-03-06 11:08:44', '2019-03-06 11:08:44');
+INSERT INTO `module_fields` VALUES (189, 'number', 'Number', 41, 19, 0, '', 0, 256, 0, '', 0, '2019-03-06 11:09:32', '2019-03-06 11:14:40');
+INSERT INTO `module_fields` VALUES (190, 'sufix', 'Sufix', 41, 19, 0, '', 0, 3, 0, '', 0, '2019-03-06 11:09:46', '2019-03-06 11:09:46');
+INSERT INTO `module_fields` VALUES (191, 'landing_id', 'Landing', 41, 7, 0, '', 0, 0, 0, '@landings', 0, '2019-03-06 11:13:13', '2019-03-06 11:13:13');
+INSERT INTO `module_fields` VALUES (192, 'is_title', 'Is Title', 41, 2, 0, '0', 0, 0, 1, '', 0, '2019-03-06 11:13:54', '2019-03-06 11:16:25');
+INSERT INTO `module_fields` VALUES (193, 'title_ka', 'Title', 42, 19, 0, '', 0, 256, 0, '', 0, '2019-03-06 12:20:55', '2019-03-06 12:20:55');
+INSERT INTO `module_fields` VALUES (194, 'text_ka', 'Text', 42, 22, 0, '', 0, 256, 0, '', 0, '2019-03-06 12:22:07', '2019-03-06 12:22:07');
+INSERT INTO `module_fields` VALUES (195, 'image', 'Image', 42, 12, 0, '', 0, 0, 0, '', 0, '2019-03-06 12:23:40', '2019-03-06 12:23:40');
+INSERT INTO `module_fields` VALUES (196, 'landing_id', 'Landing', 42, 7, 0, '', 0, 0, 0, '@landings', 0, '2019-03-06 12:24:05', '2019-03-06 12:24:05');
+INSERT INTO `module_fields` VALUES (197, 'firstname', 'Name', 43, 19, 0, '', 0, 256, 0, '', 1, '2019-03-11 09:52:21', '2019-03-11 09:52:21');
+INSERT INTO `module_fields` VALUES (198, 'phone', 'Phone', 43, 19, 0, '', 0, 256, 0, '', 2, '2019-03-11 09:52:48', '2019-03-11 09:52:48');
+INSERT INTO `module_fields` VALUES (199, 'project', 'Project', 43, 19, 0, '', 0, 256, 0, '', 3, '2019-03-11 09:53:07', '2019-03-11 09:53:07');
+INSERT INTO `module_fields` VALUES (200, 'active', 'Contacted Back', 43, 2, 0, 'false', 0, 0, 0, '', 5, '2019-03-11 09:53:33', '2019-03-12 07:03:20');
+INSERT INTO `module_fields` VALUES (201, 'email', 'Email', 43, 8, 0, '', 0, 256, 0, '', 4, '2019-03-12 07:02:55', '2019-03-12 07:05:26');
 
 -- ----------------------------
 -- Table structure for modules
@@ -532,7 +785,7 @@ CREATE TABLE `modules`  (
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 28 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 44 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of modules
@@ -550,12 +803,23 @@ INSERT INTO `modules` VALUES (17, 'Home_sliders', 'Home_sliders', 'home_sliders'
 INSERT INTO `modules` VALUES (19, 'Green_zones', 'Green_zones', 'green_zones', 'title_ka', 'Green_zone', 'Green_zonesController', 'fa-cube', 1, '2019-02-22 11:13:03', '2019-02-22 11:14:32');
 INSERT INTO `modules` VALUES (20, 'Catalogs', 'Catalogs', 'catalogs', 'text_ka', 'Catalog', 'CatalogsController', 'fa-cube', 1, '2019-02-22 11:24:14', '2019-02-22 11:27:14');
 INSERT INTO `modules` VALUES (21, 'Company_views', 'Company_views', 'company_views', 'text_ka', 'Company_view', 'Company_viewsController', 'fa-cube', 1, '2019-02-22 11:32:26', '2019-02-22 11:34:47');
-INSERT INTO `modules` VALUES (22, 'Company_Missions', 'Company_Missions', 'company_missions', 'text_ka', 'Company_Mission', 'Company_MissionsController', 'fa-cube', 1, '2019-02-22 11:35:21', '2019-02-22 11:38:51');
 INSERT INTO `modules` VALUES (23, 'Teams', 'Teams', 'teams', 'fullname_ka', 'Team', 'TeamsController', 'fa-cube', 1, '2019-02-22 11:50:07', '2019-02-22 12:10:03');
-INSERT INTO `modules` VALUES (24, 'Projects', 'Projects', 'projects', 'title_ka', 'Project', 'ProjectsController', 'fa-cube', 1, '2019-02-22 12:10:48', '2019-02-22 12:13:18');
+INSERT INTO `modules` VALUES (24, 'Projects', 'Projects', 'projects', 'title_ka', 'Project', 'ProjectsController', 'fa-cube', 1, '2019-02-22 12:10:48', '2019-02-25 12:52:25');
 INSERT INTO `modules` VALUES (25, 'Blocks', 'Blocks', 'blocks', 'title_ka', 'Block', 'BlocksController', 'fa-cube', 1, '2019-02-22 12:18:57', '2019-02-22 12:25:32');
 INSERT INTO `modules` VALUES (26, 'Floors', 'Floors', 'floors', 'title_ka', 'Floor', 'FloorsController', 'fa-cube', 1, '2019-02-22 12:42:58', '2019-02-22 12:53:06');
-INSERT INTO `modules` VALUES (27, 'Aparatmnets', 'Aparatmnets', 'aparatmnets', 'title_ka', 'Aparatmnet', 'AparatmnetsController', 'fa-cube', 1, '2019-02-22 12:53:48', '2019-02-22 12:57:16');
+INSERT INTO `modules` VALUES (27, 'Aparatmnets', 'Aparatmnets', 'aparatmnets', 'block_id', 'Aparatmnet', 'AparatmnetsController', 'fa-cube', 1, '2019-02-22 12:53:48', '2019-02-25 09:24:56');
+INSERT INTO `modules` VALUES (28, 'Tags', 'Tags', 'tags', 'title', 'Tag', 'TagsController', 'fa-tags', 1, '2019-02-26 09:22:32', '2019-02-26 09:23:10');
+INSERT INTO `modules` VALUES (29, 'Text_Images', 'Text_Images', 'text_images', 'title_ka', 'Text_Image', 'Text_ImagesController', 'fa-cube', 1, '2019-02-26 10:08:01', '2019-02-26 10:10:59');
+INSERT INTO `modules` VALUES (30, 'Landings', 'Landings', 'landings', 'title', 'Landing', 'LandingsController', 'fa-cube', 1, '2019-02-27 06:59:12', '2019-02-27 07:06:23');
+INSERT INTO `modules` VALUES (34, 'Landing_Homes', 'Landing_Homes', 'landing_homes', 'title_ka', 'Landing_Home', 'Landing_HomesController', 'fa-cube', 1, '2019-03-05 10:55:08', '2019-03-05 10:56:38');
+INSERT INTO `modules` VALUES (35, 'Seasons', 'Seasons', 'seasons', 'title_ka', 'Season', 'SeasonsController', 'fa-cube', 1, '2019-03-05 11:49:35', '2019-03-05 11:50:57');
+INSERT INTO `modules` VALUES (36, 'About_projects', 'About_projects', 'about_projects', 'title_ka', 'About_project', 'About_projectsController', 'fa-cube', 1, '2019-03-05 12:08:40', '2019-03-05 12:09:49');
+INSERT INTO `modules` VALUES (37, 'Landing_socials', 'Landing_socials', 'landing_socials', 'facebook', 'Landing_social', 'Landing_socialsController', 'fa-cube', 1, '2019-03-05 12:33:34', '2019-03-05 12:35:27');
+INSERT INTO `modules` VALUES (39, 'Landing_footers', 'Landing_footers', 'landing_footers', 'email', 'Landing_footer', 'Landing_footersController', 'fa-cube', 1, '2019-03-06 08:40:48', '2019-03-06 08:42:28');
+INSERT INTO `modules` VALUES (40, 'Project_infos', 'Project_infos', 'project_infos', 'title_ka', 'Project_info', 'Project_infosController', 'fa-cube', 1, '2019-03-06 09:07:21', '2019-03-06 09:09:50');
+INSERT INTO `modules` VALUES (41, 'Project_summaries', 'Project_summaries', 'project_summaries', 'title_ka', 'Project_summary', 'Project_summariesController', 'fa-cube', 1, '2019-03-06 11:03:30', '2019-03-06 11:10:31');
+INSERT INTO `modules` VALUES (42, 'Landing_apartments', 'Landing_apartments', 'landing_apartments', 'title_ka', 'Landing_apartment', 'Landing_apartmentsController', 'fa-cube', 1, '2019-03-06 12:20:26', '2019-03-06 12:24:21');
+INSERT INTO `modules` VALUES (43, 'Callbacks', 'Callbacks', 'callbacks', 'firstname', 'Callback', 'CallbacksController', 'fa-cube', 1, '2019-03-11 09:51:50', '2019-03-11 09:53:42');
 
 -- ----------------------------
 -- Table structure for navigations
@@ -579,8 +843,8 @@ CREATE TABLE `navigations`  (
 -- ----------------------------
 INSERT INTO `navigations` VALUES (1, NULL, '2019-02-22 11:00:22', '2019-02-22 11:00:30', 'მთავარი', 'Home', NULL, 1, '[\"Menu\"]');
 INSERT INTO `navigations` VALUES (2, NULL, '2019-02-22 11:02:10', '2019-02-22 11:03:17', 'ჩვენს შესახებ', 'About', NULL, 1, '[\"Menu\"]');
-INSERT INTO `navigations` VALUES (3, NULL, '2019-02-22 11:02:23', '2019-02-22 11:02:23', 'ბურგერ', NULL, NULL, 1, '[\"Burger_Menu\"]');
-INSERT INTO `navigations` VALUES (4, NULL, '2019-02-22 11:02:37', '2019-02-22 11:02:37', 'ბურგერ მენუ', NULL, NULL, 1, '[\"Menu\",\"Burger_Menu\"]');
+INSERT INTO `navigations` VALUES (3, NULL, '2019-02-22 11:02:23', '2019-02-25 08:01:10', 'ბურგერ', 'BUrger', NULL, 1, '[\"Burger\"]');
+INSERT INTO `navigations` VALUES (4, NULL, '2019-02-22 11:02:37', '2019-02-25 08:01:22', 'ბურგერ მენუ', 'BUrger 3', NULL, 1, '[\"Menu\",\"Burger\"]');
 
 -- ----------------------------
 -- Table structure for password_resets
@@ -635,6 +899,65 @@ CREATE TABLE `permissions`  (
 INSERT INTO `permissions` VALUES (1, 'ADMIN_PANEL', 'Admin Panel', 'Admin Panel Permission', NULL, '2019-02-22 10:24:06', '2019-02-22 10:24:06');
 
 -- ----------------------------
+-- Table structure for project_infos
+-- ----------------------------
+DROP TABLE IF EXISTS `project_infos`;
+CREATE TABLE `project_infos`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `icon` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `project_infos_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `project_infos_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of project_infos
+-- ----------------------------
+INSERT INTO `project_infos` VALUES (1, NULL, '2019-03-06 09:10:43', '2019-03-06 09:10:43', 'About Project', 'text herere', '<i class=\"fas fa-air-freshener\"></i>', 1);
+INSERT INTO `project_infos` VALUES (2, NULL, '2019-03-06 09:11:00', '2019-03-06 09:11:00', 'About 2', 'lorme text', '<i class=\"fas fa-air-freshener\"></i>', 1);
+INSERT INTO `project_infos` VALUES (3, NULL, '2019-03-06 09:11:23', '2019-03-06 09:11:23', 'about 3', 'lorem dolares ipsum', '<i class=\"fas fa-air-freshener\"></i>', 1);
+
+-- ----------------------------
+-- Table structure for project_summaries
+-- ----------------------------
+DROP TABLE IF EXISTS `project_summaries`;
+CREATE TABLE `project_summaries`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `sub_text` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `prefix` varchar(3) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `number` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  `sufix` varchar(3) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `is_title` tinyint(1) NULL DEFAULT 0,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `project_summaries_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `project_summaries_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of project_summaries
+-- ----------------------------
+INSERT INTO `project_summaries` VALUES (1, NULL, '2019-03-06 11:11:19', '2019-03-06 11:15:18', 'Summary', 'long text for title', 'small text with numbers', '$', '1', NULL, 1, 1);
+INSERT INTO `project_summaries` VALUES (2, NULL, '2019-03-06 11:17:23', '2019-03-07 09:34:00', '', NULL, 'Грузии был оформлен', '$', '1', NULL, 1, 0);
+INSERT INTO `project_summaries` VALUES (3, NULL, '2019-03-06 11:17:42', '2019-03-06 11:17:42', '', NULL, 'again small 2', NULL, '150', 'k', 1, 0);
+INSERT INTO `project_summaries` VALUES (4, NULL, '2019-03-06 11:17:57', '2019-03-06 11:17:57', '', NULL, 'sub text of three', NULL, '500', NULL, 1, 0);
+INSERT INTO `project_summaries` VALUES (5, NULL, '2019-03-06 11:18:12', '2019-03-06 11:18:12', '', NULL, 'three more and', NULL, '166', 'k', 1, 0);
+INSERT INTO `project_summaries` VALUES (6, NULL, '2019-03-06 11:18:30', '2019-03-06 11:18:30', '', NULL, 'two more and', '$', '500', NULL, 1, 0);
+INSERT INTO `project_summaries` VALUES (7, '2019-03-07 08:45:13', '2019-03-06 11:18:49', '2019-03-07 08:45:13', '', NULL, 'last one i think', NULL, '80', NULL, 1, 0);
+INSERT INTO `project_summaries` VALUES (8, NULL, '2019-03-07 08:45:29', '2019-03-07 08:45:29', '', NULL, 'sub text', '$', '150', NULL, 1, 0);
+
+-- ----------------------------
 -- Table structure for projects
 -- ----------------------------
 DROP TABLE IF EXISTS `projects`;
@@ -650,14 +973,15 @@ CREATE TABLE `projects`  (
   `text_en` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `text_ru` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `image` int(11) NULL DEFAULT NULL,
+  `slug` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of projects
 -- ----------------------------
-INSERT INTO `projects` VALUES (1, NULL, '2019-02-22 12:26:14', '2019-02-22 12:26:14', 'lisi greens', 'lisi greens english', NULL, NULL, NULL, NULL, 4);
-INSERT INTO `projects` VALUES (2, NULL, '2019-02-22 13:00:39', '2019-02-22 13:00:39', 'lisi kokhta', NULL, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `projects` VALUES (1, NULL, '2019-02-22 12:26:14', '2019-02-25 12:58:29', 'lisi greens', 'lisi greens english', NULL, NULL, NULL, NULL, 4, 'lisi-greens');
+INSERT INTO `projects` VALUES (2, NULL, '2019-02-22 13:00:39', '2019-02-25 12:58:36', 'lisi kokhta', NULL, NULL, NULL, NULL, NULL, 0, 'lisi-kokhta');
 
 -- ----------------------------
 -- Table structure for role_module
@@ -678,7 +1002,7 @@ CREATE TABLE `role_module`  (
   INDEX `role_module_module_id_foreign`(`module_id`) USING BTREE,
   CONSTRAINT `role_module_module_id_foreign` FOREIGN KEY (`module_id`) REFERENCES `modules` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `role_module_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 46 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of role_module
@@ -703,12 +1027,23 @@ INSERT INTO `role_module` VALUES (19, 1, 17, 1, 1, 1, 1, '2019-02-22 11:08:10', 
 INSERT INTO `role_module` VALUES (21, 1, 19, 1, 1, 1, 1, '2019-02-22 11:14:32', '2019-02-22 11:14:32');
 INSERT INTO `role_module` VALUES (22, 1, 20, 1, 1, 1, 1, '2019-02-22 11:27:14', '2019-02-22 11:27:14');
 INSERT INTO `role_module` VALUES (23, 1, 21, 1, 1, 1, 1, '2019-02-22 11:34:47', '2019-02-22 11:34:47');
-INSERT INTO `role_module` VALUES (24, 1, 22, 1, 1, 1, 1, '2019-02-22 11:38:51', '2019-02-22 11:38:51');
 INSERT INTO `role_module` VALUES (25, 1, 23, 1, 1, 1, 1, '2019-02-22 12:10:03', '2019-02-22 12:10:03');
 INSERT INTO `role_module` VALUES (26, 1, 24, 1, 1, 1, 1, '2019-02-22 12:13:18', '2019-02-22 12:13:18');
 INSERT INTO `role_module` VALUES (27, 1, 25, 1, 1, 1, 1, '2019-02-22 12:25:32', '2019-02-22 12:25:32');
 INSERT INTO `role_module` VALUES (28, 1, 26, 1, 1, 1, 1, '2019-02-22 12:53:06', '2019-02-22 12:53:06');
 INSERT INTO `role_module` VALUES (29, 1, 27, 1, 1, 1, 1, '2019-02-22 12:57:16', '2019-02-22 12:57:16');
+INSERT INTO `role_module` VALUES (30, 1, 28, 1, 1, 1, 1, '2019-02-26 09:23:10', '2019-02-26 09:23:10');
+INSERT INTO `role_module` VALUES (31, 1, 29, 1, 1, 1, 1, '2019-02-26 10:10:59', '2019-02-26 10:10:59');
+INSERT INTO `role_module` VALUES (32, 1, 30, 1, 1, 1, 1, '2019-02-27 07:00:37', '2019-02-27 07:00:37');
+INSERT INTO `role_module` VALUES (36, 1, 34, 1, 1, 1, 1, '2019-03-05 10:56:38', '2019-03-05 10:56:38');
+INSERT INTO `role_module` VALUES (37, 1, 35, 1, 1, 1, 1, '2019-03-05 11:50:57', '2019-03-05 11:50:57');
+INSERT INTO `role_module` VALUES (38, 1, 36, 1, 1, 1, 1, '2019-03-05 12:09:49', '2019-03-05 12:09:49');
+INSERT INTO `role_module` VALUES (39, 1, 37, 1, 1, 1, 1, '2019-03-05 12:35:27', '2019-03-05 12:35:27');
+INSERT INTO `role_module` VALUES (41, 1, 39, 1, 1, 1, 1, '2019-03-06 08:42:28', '2019-03-06 08:42:28');
+INSERT INTO `role_module` VALUES (42, 1, 40, 1, 1, 1, 1, '2019-03-06 09:09:50', '2019-03-06 09:09:50');
+INSERT INTO `role_module` VALUES (43, 1, 41, 1, 1, 1, 1, '2019-03-06 11:10:31', '2019-03-06 11:10:31');
+INSERT INTO `role_module` VALUES (44, 1, 42, 1, 1, 1, 1, '2019-03-06 12:24:21', '2019-03-06 12:24:21');
+INSERT INTO `role_module` VALUES (45, 1, 43, 1, 1, 1, 1, '2019-03-11 09:53:42', '2019-03-11 09:53:42');
 
 -- ----------------------------
 -- Table structure for role_module_fields
@@ -726,7 +1061,7 @@ CREATE TABLE `role_module_fields`  (
   INDEX `role_module_fields_field_id_foreign`(`field_id`) USING BTREE,
   CONSTRAINT `role_module_fields_field_id_foreign` FOREIGN KEY (`field_id`) REFERENCES `module_fields` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `role_module_fields_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE = InnoDB AUTO_INCREMENT = 150 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 234 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of role_module_fields
@@ -823,11 +1158,6 @@ INSERT INTO `role_module_fields` VALUES (107, 1, 75, 'write', '2019-02-22 11:33:
 INSERT INTO `role_module_fields` VALUES (108, 1, 76, 'write', '2019-02-22 11:33:49', '2019-02-22 11:33:49');
 INSERT INTO `role_module_fields` VALUES (109, 1, 77, 'write', '2019-02-22 11:34:08', '2019-02-22 11:34:08');
 INSERT INTO `role_module_fields` VALUES (110, 1, 78, 'write', '2019-02-22 11:34:30', '2019-02-22 11:34:30');
-INSERT INTO `role_module_fields` VALUES (111, 1, 79, 'write', '2019-02-22 11:35:56', '2019-02-22 11:35:56');
-INSERT INTO `role_module_fields` VALUES (112, 1, 80, 'write', '2019-02-22 11:37:11', '2019-02-22 11:37:11');
-INSERT INTO `role_module_fields` VALUES (113, 1, 81, 'write', '2019-02-22 11:37:20', '2019-02-22 11:37:20');
-INSERT INTO `role_module_fields` VALUES (114, 1, 82, 'write', '2019-02-22 11:38:17', '2019-02-22 11:38:17');
-INSERT INTO `role_module_fields` VALUES (115, 1, 83, 'write', '2019-02-22 11:38:38', '2019-02-22 11:38:38');
 INSERT INTO `role_module_fields` VALUES (116, 1, 84, 'write', '2019-02-22 11:50:59', '2019-02-22 11:50:59');
 INSERT INTO `role_module_fields` VALUES (117, 1, 85, 'write', '2019-02-22 11:53:15', '2019-02-22 11:53:15');
 INSERT INTO `role_module_fields` VALUES (118, 1, 86, 'write', '2019-02-22 11:53:27', '2019-02-22 11:53:27');
@@ -853,15 +1183,77 @@ INSERT INTO `role_module_fields` VALUES (137, 1, 105, 'write', '2019-02-22 12:28
 INSERT INTO `role_module_fields` VALUES (138, 1, 106, 'write', '2019-02-22 12:50:33', '2019-02-22 12:50:33');
 INSERT INTO `role_module_fields` VALUES (139, 1, 107, 'write', '2019-02-22 12:50:48', '2019-02-22 12:50:48');
 INSERT INTO `role_module_fields` VALUES (140, 1, 108, 'write', '2019-02-22 12:51:00', '2019-02-22 12:51:00');
-INSERT INTO `role_module_fields` VALUES (141, 1, 109, 'write', '2019-02-22 12:51:35', '2019-02-22 12:51:35');
-INSERT INTO `role_module_fields` VALUES (142, 1, 110, 'write', '2019-02-22 12:52:12', '2019-02-22 12:52:12');
 INSERT INTO `role_module_fields` VALUES (143, 1, 111, 'write', '2019-02-22 12:54:33', '2019-02-22 12:54:33');
 INSERT INTO `role_module_fields` VALUES (144, 1, 112, 'write', '2019-02-22 12:55:15', '2019-02-22 12:55:15');
 INSERT INTO `role_module_fields` VALUES (145, 1, 113, 'write', '2019-02-22 12:55:28', '2019-02-22 12:55:28');
 INSERT INTO `role_module_fields` VALUES (146, 1, 114, 'write', '2019-02-22 12:56:10', '2019-02-22 12:56:10');
-INSERT INTO `role_module_fields` VALUES (147, 1, 115, 'write', '2019-02-22 12:56:41', '2019-02-22 12:56:41');
 INSERT INTO `role_module_fields` VALUES (148, 1, 116, 'write', '2019-02-22 12:57:04', '2019-02-22 12:57:04');
 INSERT INTO `role_module_fields` VALUES (149, 1, 117, 'write', '2019-02-22 12:59:43', '2019-02-22 12:59:43');
+INSERT INTO `role_module_fields` VALUES (152, 1, 120, 'write', '2019-02-25 09:18:31', '2019-02-25 09:18:31');
+INSERT INTO `role_module_fields` VALUES (154, 1, 122, 'write', '2019-02-25 12:52:13', '2019-02-25 12:52:13');
+INSERT INTO `role_module_fields` VALUES (155, 1, 123, 'write', '2019-02-26 09:22:56', '2019-02-26 09:22:56');
+INSERT INTO `role_module_fields` VALUES (156, 1, 124, 'write', '2019-02-26 09:26:04', '2019-02-26 09:26:04');
+INSERT INTO `role_module_fields` VALUES (157, 1, 125, 'write', '2019-02-26 10:08:19', '2019-02-26 10:08:19');
+INSERT INTO `role_module_fields` VALUES (158, 1, 126, 'write', '2019-02-26 10:08:33', '2019-02-26 10:08:33');
+INSERT INTO `role_module_fields` VALUES (159, 1, 127, 'write', '2019-02-26 10:08:51', '2019-02-26 10:08:51');
+INSERT INTO `role_module_fields` VALUES (160, 1, 128, 'write', '2019-02-26 10:09:10', '2019-02-26 10:09:10');
+INSERT INTO `role_module_fields` VALUES (161, 1, 129, 'write', '2019-02-26 10:09:23', '2019-02-26 10:09:23');
+INSERT INTO `role_module_fields` VALUES (162, 1, 130, 'write', '2019-02-26 10:09:39', '2019-02-26 10:09:39');
+INSERT INTO `role_module_fields` VALUES (163, 1, 131, 'write', '2019-02-26 10:09:50', '2019-02-26 10:09:50');
+INSERT INTO `role_module_fields` VALUES (164, 1, 132, 'write', '2019-02-26 10:10:25', '2019-02-26 10:10:25');
+INSERT INTO `role_module_fields` VALUES (165, 1, 133, 'write', '2019-02-26 10:10:48', '2019-02-26 10:10:48');
+INSERT INTO `role_module_fields` VALUES (174, 1, 142, 'write', '2019-02-27 07:06:07', '2019-02-27 07:06:07');
+INSERT INTO `role_module_fields` VALUES (175, 1, 143, 'write', '2019-02-27 09:18:41', '2019-02-27 09:18:41');
+INSERT INTO `role_module_fields` VALUES (179, 1, 147, 'write', '2019-03-05 10:55:45', '2019-03-05 10:55:45');
+INSERT INTO `role_module_fields` VALUES (180, 1, 148, 'write', '2019-03-05 10:55:58', '2019-03-05 10:55:58');
+INSERT INTO `role_module_fields` VALUES (181, 1, 149, 'write', '2019-03-05 10:56:30', '2019-03-05 10:56:30');
+INSERT INTO `role_module_fields` VALUES (182, 1, 150, 'write', '2019-03-05 11:49:56', '2019-03-05 11:49:56');
+INSERT INTO `role_module_fields` VALUES (183, 1, 151, 'write', '2019-03-05 11:50:08', '2019-03-05 11:50:08');
+INSERT INTO `role_module_fields` VALUES (184, 1, 152, 'write', '2019-03-05 11:50:41', '2019-03-05 11:50:41');
+INSERT INTO `role_module_fields` VALUES (185, 1, 153, 'write', '2019-03-05 11:52:02', '2019-03-05 11:52:02');
+INSERT INTO `role_module_fields` VALUES (186, 1, 154, 'write', '2019-03-05 11:52:56', '2019-03-05 11:52:56');
+INSERT INTO `role_module_fields` VALUES (187, 1, 155, 'write', '2019-03-05 11:53:17', '2019-03-05 11:53:17');
+INSERT INTO `role_module_fields` VALUES (188, 1, 156, 'write', '2019-03-05 11:53:50', '2019-03-05 11:53:50');
+INSERT INTO `role_module_fields` VALUES (189, 1, 157, 'write', '2019-03-05 11:54:08', '2019-03-05 11:54:08');
+INSERT INTO `role_module_fields` VALUES (190, 1, 158, 'write', '2019-03-05 11:54:27', '2019-03-05 11:54:27');
+INSERT INTO `role_module_fields` VALUES (191, 1, 159, 'write', '2019-03-05 12:08:58', '2019-03-05 12:08:58');
+INSERT INTO `role_module_fields` VALUES (192, 1, 160, 'write', '2019-03-05 12:09:09', '2019-03-05 12:09:09');
+INSERT INTO `role_module_fields` VALUES (193, 1, 161, 'write', '2019-03-05 12:09:21', '2019-03-05 12:09:21');
+INSERT INTO `role_module_fields` VALUES (194, 1, 162, 'write', '2019-03-05 12:09:39', '2019-03-05 12:09:39');
+INSERT INTO `role_module_fields` VALUES (195, 1, 163, 'write', '2019-03-05 12:34:05', '2019-03-05 12:34:05');
+INSERT INTO `role_module_fields` VALUES (196, 1, 164, 'write', '2019-03-05 12:34:19', '2019-03-05 12:34:19');
+INSERT INTO `role_module_fields` VALUES (197, 1, 165, 'write', '2019-03-05 12:34:39', '2019-03-05 12:34:39');
+INSERT INTO `role_module_fields` VALUES (198, 1, 166, 'write', '2019-03-05 12:35:03', '2019-03-05 12:35:03');
+INSERT INTO `role_module_fields` VALUES (199, 1, 167, 'write', '2019-03-05 12:35:20', '2019-03-05 12:35:20');
+INSERT INTO `role_module_fields` VALUES (200, 1, 168, 'write', '2019-03-05 12:37:14', '2019-03-05 12:37:14');
+INSERT INTO `role_module_fields` VALUES (201, 1, 169, 'write', '2019-03-06 08:21:47', '2019-03-06 08:21:47');
+INSERT INTO `role_module_fields` VALUES (202, 1, 170, 'write', '2019-03-06 08:23:54', '2019-03-06 08:23:54');
+INSERT INTO `role_module_fields` VALUES (203, 1, 171, 'write', '2019-03-06 08:32:20', '2019-03-06 08:32:20');
+INSERT INTO `role_module_fields` VALUES (208, 1, 176, 'write', '2019-03-06 08:41:02', '2019-03-06 08:41:02');
+INSERT INTO `role_module_fields` VALUES (209, 1, 177, 'write', '2019-03-06 08:41:16', '2019-03-06 08:41:16');
+INSERT INTO `role_module_fields` VALUES (210, 1, 178, 'write', '2019-03-06 08:41:46', '2019-03-06 08:41:46');
+INSERT INTO `role_module_fields` VALUES (211, 1, 179, 'write', '2019-03-06 08:42:18', '2019-03-06 08:42:18');
+INSERT INTO `role_module_fields` VALUES (212, 1, 180, 'write', '2019-03-06 09:08:00', '2019-03-06 09:08:00');
+INSERT INTO `role_module_fields` VALUES (213, 1, 181, 'write', '2019-03-06 09:08:15', '2019-03-06 09:08:15');
+INSERT INTO `role_module_fields` VALUES (214, 1, 182, 'write', '2019-03-06 09:08:34', '2019-03-06 09:08:34');
+INSERT INTO `role_module_fields` VALUES (216, 1, 184, 'write', '2019-03-06 09:09:36', '2019-03-06 09:09:36');
+INSERT INTO `role_module_fields` VALUES (217, 1, 185, 'write', '2019-03-06 11:07:13', '2019-03-06 11:07:13');
+INSERT INTO `role_module_fields` VALUES (218, 1, 186, 'write', '2019-03-06 11:07:27', '2019-03-06 11:07:27');
+INSERT INTO `role_module_fields` VALUES (219, 1, 187, 'write', '2019-03-06 11:08:21', '2019-03-06 11:08:21');
+INSERT INTO `role_module_fields` VALUES (220, 1, 188, 'write', '2019-03-06 11:08:44', '2019-03-06 11:08:44');
+INSERT INTO `role_module_fields` VALUES (221, 1, 189, 'write', '2019-03-06 11:09:32', '2019-03-06 11:09:32');
+INSERT INTO `role_module_fields` VALUES (222, 1, 190, 'write', '2019-03-06 11:09:46', '2019-03-06 11:09:46');
+INSERT INTO `role_module_fields` VALUES (223, 1, 191, 'write', '2019-03-06 11:13:13', '2019-03-06 11:13:13');
+INSERT INTO `role_module_fields` VALUES (224, 1, 192, 'write', '2019-03-06 11:13:54', '2019-03-06 11:13:54');
+INSERT INTO `role_module_fields` VALUES (225, 1, 193, 'write', '2019-03-06 12:20:56', '2019-03-06 12:20:56');
+INSERT INTO `role_module_fields` VALUES (226, 1, 194, 'write', '2019-03-06 12:22:07', '2019-03-06 12:22:07');
+INSERT INTO `role_module_fields` VALUES (227, 1, 195, 'write', '2019-03-06 12:23:40', '2019-03-06 12:23:40');
+INSERT INTO `role_module_fields` VALUES (228, 1, 196, 'write', '2019-03-06 12:24:05', '2019-03-06 12:24:05');
+INSERT INTO `role_module_fields` VALUES (229, 1, 197, 'write', '2019-03-11 09:52:21', '2019-03-11 09:52:21');
+INSERT INTO `role_module_fields` VALUES (230, 1, 198, 'write', '2019-03-11 09:52:48', '2019-03-11 09:52:48');
+INSERT INTO `role_module_fields` VALUES (231, 1, 199, 'write', '2019-03-11 09:53:07', '2019-03-11 09:53:07');
+INSERT INTO `role_module_fields` VALUES (232, 1, 200, 'write', '2019-03-11 09:53:33', '2019-03-11 09:53:33');
+INSERT INTO `role_module_fields` VALUES (233, 1, 201, 'write', '2019-03-12 07:02:55', '2019-03-12 07:02:55');
 
 -- ----------------------------
 -- Table structure for role_user
@@ -914,6 +1306,50 @@ INSERT INTO `roles` VALUES (1, 'SUPER_ADMIN', 'Super Admin', 'Full Access Role',
 INSERT INTO `roles` VALUES (2, 'ADMIN', 'admin', NULL, 1, 1, NULL, '2019-02-22 10:28:33', '2019-02-22 10:28:33');
 
 -- ----------------------------
+-- Table structure for seasons
+-- ----------------------------
+DROP TABLE IF EXISTS `seasons`;
+CREATE TABLE `seasons`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `landing_id` int(10) UNSIGNED NOT NULL DEFAULT 1,
+  `image` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `seasons_landing_id_foreign`(`landing_id`) USING BTREE,
+  CONSTRAINT `seasons_landing_id_foreign` FOREIGN KEY (`landing_id`) REFERENCES `landings` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of seasons
+-- ----------------------------
+INSERT INTO `seasons` VALUES (1, NULL, '2019-03-05 11:56:29', '2019-03-06 08:26:27', 'აქტიური 4 სეზონის მაძილზე', 'აქტიური 4 სეზონის მაძილზე აქტიური 4 სეზონის მაძილზე', 1, 1);
+INSERT INTO `seasons` VALUES (2, NULL, '2019-03-07 08:43:45', '2019-03-07 08:43:45', 'kokhta', 'asdasd asd asd ad', 2, 8);
+
+-- ----------------------------
+-- Table structure for tags
+-- ----------------------------
+DROP TABLE IF EXISTS `tags`;
+CREATE TABLE `tags`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT '',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tags
+-- ----------------------------
+INSERT INTO `tags` VALUES (1, NULL, '2019-02-26 09:23:31', '2019-02-26 09:23:31', 'greenzone');
+INSERT INTO `tags` VALUES (2, NULL, '2019-02-26 09:24:48', '2019-02-26 09:24:48', 'views');
+INSERT INTO `tags` VALUES (3, NULL, '2019-02-26 09:24:58', '2019-02-26 09:24:58', 'mission');
+
+-- ----------------------------
 -- Table structure for teams
 -- ----------------------------
 DROP TABLE IF EXISTS `teams`;
@@ -931,7 +1367,14 @@ CREATE TABLE `teams`  (
   `position_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `active` tinyint(1) NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of teams
+-- ----------------------------
+INSERT INTO `teams` VALUES (1, NULL, '2019-02-25 12:04:20', '2019-02-25 12:04:20', 'Full name ka :', NULL, NULL, 1, 'Position ka :', 'Position ka :', 'Position ka :', 1);
+INSERT INTO `teams` VALUES (2, NULL, NULL, NULL, 'giorgi rekchi', 'george', NULL, NULL, NULL, NULL, NULL, 0);
+INSERT INTO `teams` VALUES (3, NULL, NULL, NULL, 'vaxo', 'vakho', NULL, NULL, NULL, NULL, NULL, 0);
 
 -- ----------------------------
 -- Table structure for tests
@@ -955,6 +1398,32 @@ INSERT INTO `tests` VALUES (1, '2019-02-22 10:44:05', '2019-02-22 10:32:13', '20
 INSERT INTO `tests` VALUES (2, NULL, '2019-02-22 10:50:09', '2019-02-22 10:50:09', 'ტურები', 'uuu', '[\"header\",\"burger\"]');
 
 -- ----------------------------
+-- Table structure for text_images
+-- ----------------------------
+DROP TABLE IF EXISTS `text_images`;
+CREATE TABLE `text_images`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `deleted_at` timestamp(0) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  `title_ka` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `title_en` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `title_ru` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `text_ka` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `text_en` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `text_ru` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `image` int(11) NULL DEFAULT NULL,
+  `active` tinyint(1) NULL DEFAULT 1,
+  `tag_id` int(10) UNSIGNED NULL DEFAULT 1,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of text_images
+-- ----------------------------
+INSERT INTO `text_images` VALUES (1, NULL, '2019-02-26 10:12:02', '2019-02-26 10:14:13', 'სათაური', NULL, NULL, 'ტექსტი ქართულად', NULL, NULL, 5, 1, 1);
+
+-- ----------------------------
 -- Table structure for uploads
 -- ----------------------------
 DROP TABLE IF EXISTS `uploads`;
@@ -974,7 +1443,7 @@ CREATE TABLE `uploads`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `uploads_user_id_foreign`(`user_id`) USING BTREE,
   CONSTRAINT `uploads_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of uploads
@@ -983,6 +1452,12 @@ INSERT INTO `uploads` VALUES (1, '12de8d4e66b0643ac998aa928c8abda4--campfire-tum
 INSERT INTO `uploads` VALUES (2, 'DMDIKcyWsAEsKDj.jpg', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-02-22\\2.jpg', 'jpg', 1, 0, 3, '354449', 'image/2019-02-22/2.jpg', NULL, '2019-02-22 11:22:29', '2019-02-22 11:22:30');
 INSERT INTO `uploads` VALUES (3, 'wallpaper2you_404548.jpg', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-02-22\\3.jpg', 'jpg', 1, 0, 3, '527134', 'image/2019-02-22/3.jpg', NULL, '2019-02-22 11:22:59', '2019-02-22 11:23:00');
 INSERT INTO `uploads` VALUES (4, 'batumi3.jpg', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-02-22\\4.jpg', 'jpg', 1, 0, 3, '189194', 'image/2019-02-22/4.jpg', NULL, '2019-02-22 12:26:10', '2019-02-22 12:26:10');
+INSERT INTO `uploads` VALUES (5, 'Random_Wallpaper_NexusandMe-102.jpg', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-02-26\\5.jpg', 'jpg', 1, 0, 3, '946098', 'image/2019-02-26/5.jpg', NULL, '2019-02-26 10:11:53', '2019-02-26 10:11:53');
+INSERT INTO `uploads` VALUES (6, 'about_project.png', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-03-05\\6.png', 'png', 1, 0, 3, '791022', 'image/2019-03-05/6.png', NULL, '2019-03-05 12:12:57', '2019-03-05 12:12:58');
+INSERT INTO `uploads` VALUES (7, 'bg1.png', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-03-05\\7.png', 'png', 1, 0, 3, '1183560', 'image/2019-03-05/7.png', NULL, '2019-03-05 12:13:02', '2019-03-05 12:13:03');
+INSERT INTO `uploads` VALUES (8, 'flat.png', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-03-05\\8.png', 'png', 1, 0, 3, '683801', 'image/2019-03-05/8.png', NULL, '2019-03-05 12:13:03', '2019-03-05 12:13:04');
+INSERT INTO `uploads` VALUES (9, 'summary.png', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-03-05\\9.png', 'png', 1, 0, 3, '982552', 'image/2019-03-05/9.png', NULL, '2019-03-05 12:13:04', '2019-03-05 12:13:04');
+INSERT INTO `uploads` VALUES (10, '268A2809 copy copy copy.png', 'C:\\wamp64\\www\\code_online\\lisi.digitalmate.io\\public\\files\\image\\2019-03-06\\10.png', 'png', 1, 0, 3, '939499', 'image/2019-03-06/10.png', NULL, '2019-03-06 08:25:17', '2019-03-06 08:25:17');
 
 -- ----------------------------
 -- Table structure for users

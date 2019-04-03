@@ -26,8 +26,6 @@
 						@la_display($module, 'title_ka')
 						@la_display($module, 'title_en')
 						@la_display($module, 'title_ru')
-						@la_display($module, 'block_id')
-						@la_display($module, 'apartments')
 					</div>
 				</div>
 			</div>

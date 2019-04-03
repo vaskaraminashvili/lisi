@@ -36,8 +36,6 @@
 					@la_input($module, 'title_ka')
 					@la_input($module, 'title_en')
 					@la_input($module, 'title_ru')
-					@la_input($module, 'block_id')
-					@la_input($module, 'apartments')
 					--}}
                     <br>
 					<div class="form-group">

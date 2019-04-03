@@ -21,8 +21,6 @@ class CreateFloorsTable extends Migration
             ["title_ka", "Floor ka", "String", false, "", 0, 256, false],
             ["title_en", "Floor en", "String", false, "", 0, 256, false],
             ["title_ru", "Floor ru", "String", false, "", 0, 256, false],
-            ["block_id", "Block", "Dropdown", false, "", 0, 0, false, "@blocks"],
-            ["apartments", "Appartmnets", "String", false, "", 0, 256, false],
         ]);
 		
 		/*

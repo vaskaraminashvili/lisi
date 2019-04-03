@@ -23,8 +23,8 @@ class FloorsController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title_ka';
-	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru', 'block_id', 'apartments'];
-
+	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru'];
+	
 	public function __construct() {
 		// Field Access of Listing Columns
 		if(\Dwij\Laraadmin\Helpers\LAHelper::laravel_ver() >= 5.3) {
@@ -36,7 +36,7 @@ class FloorsController extends Controller
 			$this->listing_cols = ModuleFields::listingColumnAccessScan('Floors', $this->listing_cols);
 		}
 	}
-
+	
 	/**
 	 * Display a listing of the Floors.
 	 *
@@ -45,7 +45,7 @@ class FloorsController extends Controller
 	public function index()
 	{
 		$module = Module::get('Floors');
-
+		
 		if(Module::hasAccess($module->id)) {
 			return View('la.floors.index', [
 				'show_actions' => $this->show_action,
@@ -76,19 +76,19 @@ class FloorsController extends Controller
 	public function store(Request $request)
 	{
 		if(Module::hasAccess("Floors", "create")) {
-
+		
 			$rules = Module::validateRules("Floors", $request);
-
+			
 			$validator = Validator::make($request->all(), $rules);
-
+			
 			if ($validator->fails()) {
 				return redirect()->back()->withErrors($validator)->withInput();
 			}
-
+			
 			$insert_id = Module::insert("Floors", $request);
-
+			
 			return redirect()->route(config('laraadmin.adminRoute') . '.floors.index');
-
+			
 		} else {
 			return redirect(config('laraadmin.adminRoute')."/");
 		}
@@ -103,12 +103,12 @@ class FloorsController extends Controller
 	public function show($id)
 	{
 		if(Module::hasAccess("Floors", "view")) {
-
+			
 			$floor = Floor::find($id);
 			if(isset($floor->id)) {
 				$module = Module::get('Floors');
 				$module->row = $floor;
-
+				
 				return view('la.floors.show', [
 					'module' => $module,
 					'view_col' => $this->view_col,
@@ -134,13 +134,13 @@ class FloorsController extends Controller
 	 */
 	public function edit($id)
 	{
-		if(Module::hasAccess("Floors", "edit")) {
+		if(Module::hasAccess("Floors", "edit")) {			
 			$floor = Floor::find($id);
-			if(isset($floor->id)) {
+			if(isset($floor->id)) {	
 				$module = Module::get('Floors');
-
+				
 				$module->row = $floor;
-
+				
 				return view('la.floors.edit', [
 					'module' => $module,
 					'view_col' => $this->view_col,
@@ -166,19 +166,19 @@ class FloorsController extends Controller
 	public function update(Request $request, $id)
 	{
 		if(Module::hasAccess("Floors", "edit")) {
-
+			
 			$rules = Module::validateRules("Floors", $request, true);
-
+			
 			$validator = Validator::make($request->all(), $rules);
-
+			
 			if ($validator->fails()) {
 				return redirect()->back()->withErrors($validator)->withInput();;
 			}
-
+			
 			$insert_id = Module::updateRow("Floors", $request, $id);
-
+			
 			return redirect()->route(config('laraadmin.adminRoute') . '.floors.index');
-
+			
 		} else {
 			return redirect(config('laraadmin.adminRoute')."/");
 		}
@@ -194,14 +194,14 @@ class FloorsController extends Controller
 	{
 		if(Module::hasAccess("Floors", "delete")) {
 			Floor::find($id)->delete();
-
+			
 			// Redirecting to index() method
 			return redirect()->route(config('laraadmin.adminRoute') . '.floors.index');
 		} else {
 			return redirect(config('laraadmin.adminRoute')."/");
 		}
 	}
-
+	
 	/**
 	 * Datatable Ajax fetch
 	 *
@@ -214,9 +214,9 @@ class FloorsController extends Controller
 		$data = $out->getData();
 
 		$fields_popup = ModuleFields::getModuleFields('Floors');
-
+		
 		for($i=0; $i < count($data->data); $i++) {
-			for ($j=0; $j < count($this->listing_cols); $j++) {
+			for ($j=0; $j < count($this->listing_cols); $j++) { 
 				$col = $this->listing_cols[$j];
 				if($fields_popup[$col] != null && starts_with($fields_popup[$col]->popup_vals, "@")) {
 					$data->data[$i][$j] = ModuleFields::getFieldValue($fields_popup[$col], $data->data[$i][$j]);
@@ -228,13 +228,13 @@ class FloorsController extends Controller
 				//    $data->data[$i][$j];
 				// }
 			}
-
+			
 			if($this->show_action) {
 				$output = '';
 				if(Module::hasAccess("Floors", "edit")) {
 					$output .= '<a href="'.url(config('laraadmin.adminRoute') . '/floors/'.$data->data[$i][0].'/edit').'" class="btn btn-warning btn-xs" style="display:inline;padding:2px 5px 3px 5px;"><i class="fa fa-edit"></i></a>';
 				}
-
+				
 				if(Module::hasAccess("Floors", "delete")) {
 					$output .= Form::open(['route' => [config('laraadmin.adminRoute') . '.floors.destroy', $data->data[$i][0]], 'method' => 'delete', 'style'=>'display:inline']);
 					$output .= ' <button class="btn btn-danger btn-xs" type="submit"><i class="fa fa-times"></i></button>';

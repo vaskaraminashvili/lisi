@@ -23,7 +23,7 @@ class ProjectsController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title_ka';
-	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru', 'text_ka', 'text_en', 'text_ru', 'image'];
+	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru', 'text_ka', 'text_en', 'text_ru', 'image', 'slug'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

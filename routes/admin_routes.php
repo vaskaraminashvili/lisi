@@ -93,9 +93,6 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	Route::resource(config('laraadmin.adminRoute') . '/company_views', 'LA\Company_viewsController');
 	Route::get(config('laraadmin.adminRoute') . '/company_view_dt_ajax', 'LA\Company_viewsController@dtajax');
 
-	/* ================== Company_Missions ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/company_missions', 'LA\Company_MissionsController');
-	Route::get(config('laraadmin.adminRoute') . '/company_mission_dt_ajax', 'LA\Company_MissionsController@dtajax');
 
 	/* ================== Teams ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/teams', 'LA\TeamsController');
@@ -116,4 +113,57 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Aparatmnets ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/aparatmnets', 'LA\AparatmnetsController');
 	Route::get(config('laraadmin.adminRoute') . '/aparatmnet_dt_ajax', 'LA\AparatmnetsController@dtajax');
+
+
+	/* ================== Tags ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/tags', 'LA\TagsController');
+	Route::get(config('laraadmin.adminRoute') . '/tag_dt_ajax', 'LA\TagsController@dtajax');
+
+	/* ================== Text_Images ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/text_images', 'LA\Text_ImagesController');
+	Route::get(config('laraadmin.adminRoute') . '/text_image_dt_ajax', 'LA\Text_ImagesController@dtajax');
+
+	/* ================== Landings ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/landings', 'LA\LandingsController');
+	Route::get(config('laraadmin.adminRoute') . '/landing_dt_ajax', 'LA\LandingsController@dtajax');
+
+
+
+
+	/* ================== Landing_Homes ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/landing_homes', 'LA\Landing_HomesController');
+	Route::get(config('laraadmin.adminRoute') . '/landing_home_dt_ajax', 'LA\Landing_HomesController@dtajax');
+
+	/* ================== Seasons ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/seasons', 'LA\SeasonsController');
+	Route::get(config('laraadmin.adminRoute') . '/season_dt_ajax', 'LA\SeasonsController@dtajax');
+
+	/* ================== About_projects ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/about_projects', 'LA\About_projectsController');
+	Route::get(config('laraadmin.adminRoute') . '/about_project_dt_ajax', 'LA\About_projectsController@dtajax');
+
+	/* ================== Landing_socials ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/landing_socials', 'LA\Landing_socialsController');
+	Route::get(config('laraadmin.adminRoute') . '/landing_social_dt_ajax', 'LA\Landing_socialsController@dtajax');
+
+
+	/* ================== Landing_footers ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/landing_footers', 'LA\Landing_footersController');
+	Route::get(config('laraadmin.adminRoute') . '/landing_footer_dt_ajax', 'LA\Landing_footersController@dtajax');
+
+	/* ================== Project_infos ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/project_infos', 'LA\Project_infosController');
+	Route::get(config('laraadmin.adminRoute') . '/project_info_dt_ajax', 'LA\Project_infosController@dtajax');
+
+	/* ================== Project_summaries ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/project_summaries', 'LA\Project_summariesController');
+	Route::get(config('laraadmin.adminRoute') . '/project_summary_dt_ajax', 'LA\Project_summariesController@dtajax');
+
+	/* ================== Landing_apartments ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/landing_apartments', 'LA\Landing_apartmentsController');
+	Route::get(config('laraadmin.adminRoute') . '/landing_apartment_dt_ajax', 'LA\Landing_apartmentsController@dtajax');
+
+	/* ================== Callbacks ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/callbacks', 'LA\CallbacksController');
+	Route::get(config('laraadmin.adminRoute') . '/callback_dt_ajax', 'LA\CallbacksController@dtajax');
 });

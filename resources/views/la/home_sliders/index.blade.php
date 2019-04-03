@@ -62,7 +62,8 @@
 					@la_input($module, 'text_ka')
 					@la_input($module, 'text_en')
 					@la_input($module, 'text_ru')
-					@la_input($module, 'image')
+					@la_input($module, 'image_id')
+					@la_input($module, 'active')
 					--}}
 				</div>
 			</div>

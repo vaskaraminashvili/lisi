@@ -66,6 +66,7 @@
 					@la_input($module, 'text_en')
 					@la_input($module, 'text_ru')
 					@la_input($module, 'image')
+					@la_input($module, 'slug')
 					--}}
 				</div>
 			</div>

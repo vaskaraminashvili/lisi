@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\Navigation;
+use View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $navigation = Navigation::where('menu_location', 'like' , '%burger%')->get();
+        View::share ('navigation', $navigation);
         Schema::defaultStringLength(191);
     }
 

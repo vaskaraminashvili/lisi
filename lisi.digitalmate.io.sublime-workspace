@@ -1,0 +1,3626 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"par",
+				"partner__logos\t(landing_kokta_mitarbi.blade.php)"
+			],
+			[
+				"ass",
+				"assets"
+			],
+			[
+				"dis",
+				"display\t(landing.css)"
+			],
+			[
+				"css",
+				"css\t.css() - single"
+			],
+			[
+				"fade",
+				"fadeIn\t.fadeIn()"
+			],
+			[
+				"down",
+				"downArrow"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"post",
+				"position-relative"
+			],
+			[
+				"about_",
+				"about_project_siema"
+			],
+			[
+				"abo",
+				"about-project"
+			],
+			[
+				"texa",
+				"text-align\tproperty"
+			],
+			[
+				"border-radius",
+				"border-radius-5\t(buttons.css)"
+			],
+			[
+				"pxl",
+				"px-lg-2 \tBootstrap 4 Class"
+			],
+			[
+				"btnl",
+				"btn-light \tBootstrap 4 Class"
+			],
+			[
+				"la",
+				"layouts/"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"R",
+				"Route::get\tBasic Get Route."
+			],
+			[
+				"ju",
+				"justify-content\tproperty"
+			],
+			[
+				"border",
+				"border-dark \tBootstrap 4 Class"
+			],
+			[
+				"img",
+				"img-fluid \tBootstrap 4 Class"
+			],
+			[
+				"texw",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"no",
+				"no-repeat\t(_mainContent.scss)"
+			],
+			[
+				"bacgro",
+				"background\tproperty"
+			],
+			[
+				"cont",
+				"content_id"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"text-w",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"tex",
+				"text-danger \tBootstrap 4 Class"
+			],
+			[
+				"main",
+				"mainContent"
+			],
+			[
+				"mai",
+				"mainContent"
+			],
+			[
+				"absol",
+				"absolute-centered\t(app.scss)"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"cs",
+				"css\t.css() - single"
+			],
+			[
+				"land",
+				"landing__background\t(MainContent.php)"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"tea",
+				"text-align\tproperty"
+			],
+			[
+				"ri",
+				"right_2\t(MainContent.php)"
+			],
+			[
+				"righ",
+				"right_1\t(MainContent.php)"
+			],
+			[
+				"bac",
+				"background-repeat\tproperty"
+			],
+			[
+				"landing",
+				"landing__left"
+			],
+			[
+				"fu",
+				"fullscreenMenu\t(app.scss)"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"quer",
+				"query_add"
+			],
+			[
+				"data",
+				"data-mid\t(news_main.php)"
+			],
+			[
+				"Order",
+				"OrderStatusUpdate\t(web.php)"
+			],
+			[
+				"auth",
+				"auth()->id\t(GuideController.php)"
+			],
+			[
+				"mr",
+				"mr-5"
+			],
+			[
+				"cre",
+				"created_by\t(Tour.php)"
+			],
+			[
+				"To",
+				"TourCreatedNotification\t(EventServiceProvider.php)"
+			],
+			[
+				"crea",
+				"creator\t(Tour.php)"
+			],
+			[
+				"Tour",
+				"TourCreated"
+			],
+			[
+				"even",
+				"event\t(EventServiceProvider.php)"
+			],
+			[
+				"No",
+				"Notifications\t(web.php)"
+			],
+			[
+				"Send",
+				"SendGuideCreatedNotification"
+			],
+			[
+				"G",
+				"GuideCreated"
+			],
+			[
+				"Guide",
+				"GuideCreated($guide\t(Guide.php)"
+			],
+			[
+				"admi",
+				"admin.includes.errors\t(edit.blade.php)"
+			],
+			[
+				"bg",
+				"bg-warning \tBootstrap 4 Class"
+			],
+			[
+				"req",
+				"request\t(TourController.php)"
+			],
+			[
+				"bgs",
+				"bg-success \tBootstrap 4 Class"
+			],
+			[
+				"de",
+				"description\t(TourController.php)"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"guide",
+				"guides"
+			],
+			[
+				"com",
+				"compact"
+			],
+			[
+				"list-group-item-s",
+				"list-group-item-success \tBootstrap 4 Class"
+			],
+			[
+				"mt",
+				"mt-3 \tBootstrap 4 Class"
+			],
+			[
+				"bg-",
+				"bg-warning \tBootstrap 4 Class"
+			],
+			[
+				"Projec",
+				"Project"
+			],
+			[
+				"projec",
+				"projects"
+			],
+			[
+				"ProjectCret",
+				"ProjectCreated\t(Project.php)"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"modelnam",
+				"modelNameSingularLowerCase"
+			],
+			[
+				"modelan",
+				"modelNameSingularLowerCase"
+			],
+			[
+				"modena",
+				"modelNameSingularLowerCase"
+			],
+			[
+				"arr",
+				"array_column"
+			],
+			[
+				"rou",
+				"route\tblade-route"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"sec",
+				"sec\tblade-section"
+			],
+			[
+				"project",
+				"projects"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"can",
+				"cane\tblade-can_else"
+			],
+			[
+				"abor",
+				"abort_unless"
+			],
+			[
+				"user",
+				"user_id\t(ProjectsController.php)"
+			],
+			[
+				"tas",
+				"task"
+			],
+			[
+				"error",
+				"errors\t(create.blade.php)"
+			],
+			[
+				"sub",
+				"submit\t.submit()"
+			],
+			[
+				"for",
+				"for\tAttr"
+			],
+			[
+				"l",
+				"ltabl\tmigration component table"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"des",
+				"description\t(Project.php)"
+			],
+			[
+				"proje",
+				"project.destroy"
+			],
+			[
+				"proe",
+				"project"
+			],
+			[
+				"lay",
+				"layouts.master\t(index.blade.php)"
+			],
+			[
+				"me",
+				"method\tAttr"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"v",
+				"view"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"Rc",
+				"Route::controller\tRoute a controller to a URI with wildcard routing."
+			],
+			[
+				"ta",
+				"tasks\t(web.php)"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"sea",
+				"seasons\t(landing.css)"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"four",
+				"four-season__input\t(season.blade.php)"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"pr",
+				"pro\tprotected_var"
+			],
+			[
+				"an",
+				"animated"
+			],
+			[
+				"sta",
+				"state-1"
+			],
+			[
+				"input",
+				"input_name"
+			],
+			[
+				"submit",
+				"submit-button\t(buttons.css)"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"te",
+				"text-transform\tproperty"
+			],
+			[
+				"d",
+				"d-flex \tBootstrap 4 Class"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"visi",
+				"visible\t(landing.css)"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"h1",
+				"h-100 \tBootstrap 4 Class"
+			],
+			[
+				"im",
+				"img-fluid \tBootstrap 4 Class"
+			],
+			[
+				"foera",
+				"foreach\tblade-foreach"
+			],
+			[
+				"mod",
+				"modul"
+			],
+			[
+				"lad",
+				"landing_id"
+			],
+			[
+				"to",
+				"toArray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 1578,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/landing_kokta_mitarbi.blade.php",
+			"settings":
+			{
+				"buffer_size": 26764,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/landing_lisi.blade.php",
+			"settings":
+			{
+				"buffer_size": 22596,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/landing.js",
+			"settings":
+			{
+				"buffer_size": 2627,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/landing.css",
+			"settings":
+			{
+				"buffer_size": 16510,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/responsive.css",
+			"settings":
+			{
+				"buffer_size": 2846,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/buttons.css",
+			"settings":
+			{
+				"buffer_size": 987,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/scrollDown.css",
+			"settings":
+			{
+				"buffer_size": 1573,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 286.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"blade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"bladeta",
+				"Snippet: blade-task"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"mater",
+				"Material Theme: Configuration"
+			],
+			[
+				"ssblade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"doc",
+				"BracketHighlighter: Documentation"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"activa",
+				"Material Theme: Activate theme"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Activate theme"
+			],
+			[
+				"sssc",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"acti",
+				"Material Theme: Activate theme"
+			],
+			[
+				"ssss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"makesni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"enble",
+				"Package Control: Enable Package"
+			],
+			[
+				"names",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"act",
+				"Material Theme: Activate theme"
+			],
+			[
+				"SSPHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"sspph",
+				"Set Syntax: PHP"
+			],
+			[
+				"atom",
+				"Atomizr: Automatic conversion"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Show Panel"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"mate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"randco",
+				"Random:Hex Color"
+			],
+			[
+				"termina",
+				"Terminal: Open in project folder"
+			],
+			[
+				"packal",
+				"Package Control: List Packages"
+			],
+			[
+				"jsb",
+				"Javascript Beautify"
+			],
+			[
+				"ssbla",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"materia",
+				"Material Theme: Configuration"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"actipa",
+				"Package Control: Install Package"
+			],
+			[
+				"actie",
+				"Material Theme: Activate theme"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"snippetma",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"ssbl",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"jsa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssvu",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"ma",
+				"Material Theme: Activate theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"materi",
+				"Material Theme: Activate theme"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"ranhe",
+				"Random:Hex Color"
+			],
+			[
+				"sspp",
+				"Set Syntax: PHP"
+			],
+			[
+				"ss",
+				"Set Syntax: PHP"
+			],
+			[
+				"beut",
+				"Javascript Beautify"
+			],
+			[
+				"ssjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Javascript Beautify"
+			],
+			[
+				"jav",
+				"Javascript Beautify"
+			],
+			[
+				"css",
+				"Format CSS: Expanded"
+			],
+			[
+				"j",
+				"Javascript Beautify"
+			],
+			[
+				"css ",
+				"Format CSS: Compact"
+			],
+			[
+				"ssb",
+				"Set Syntax: Batch File"
+			],
+			[
+				"tospa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"to sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"CLOS",
+				"Project: Close"
+			],
+			[
+				"randhex",
+				"Random:Hex Color"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"randtex",
+				"Random:Text"
+			],
+			[
+				"randhe",
+				"Random:Hex Color"
+			],
+			[
+				"tosp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"randeh",
+				"Random:Hex Color"
+			],
+			[
+				"LIST",
+				"Package Control: List Packages"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"randomhe",
+				"Random:Hex Color"
+			],
+			[
+				"show",
+				"SFTP: Show Panel"
+			],
+			[
+				"randomh",
+				"Random:Hex Color"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"rand",
+				"Random:Full Name"
+			],
+			[
+				"random",
+				"Random:Last Name"
+			],
+			[
+				"radnom",
+				"Random:Int"
+			],
+			[
+				" PackageResourceViewer",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"d",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"repos",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 1129.0
+	},
+	"console":
+	{
+		"height": 448.0,
+		"history":
+		[
+			"view.run_command('test')",
+			"view.run_test('test')",
+			"view.run_command('test')",
+			"view.run_command('example')",
+			"view.run_command(\"example\")",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/app",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/css",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/js",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/js/siema.min.js",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/webpack.mix.js",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/css/app.css",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/css/responsive.css",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/assets/sass/app.scss",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/public/css/landing.css",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing_lisi.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing/landing_home.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing/footer.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/routes/web.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing_kokhta_mitarbi.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/layouts/landing.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing_mitarbi/landing_home.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/layouts/landing_mitarbi.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/app/Http/Controllers/LandingController.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing_backup.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing_lisi_backup.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing/feedback.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/landing/project_info.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/amocrmFrom.blade.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/app/Http/Controllers/AmoCrm.php",
+		"/C/wamp64/www/www_code_online/lisi.digitalmate.io/resources/views/send-contact.blade.php",
+		"/C/Users/vaska/Downloads/send-contact.php",
+		"/K/code_online/technoboom_online/pcms/config.php",
+		"/K/code_online/technoboom_online/ipn/bogge/t.php",
+		"/K/code_online/technoboom_online/ipn/bogge/log.txt",
+		"/K/code_online/technoboom_online/tt.txt",
+		"/K/code_online/technoboom_online/ipn/bogge/CheckPaymentAvail.php",
+		"/K/code_online/technoboom_online/sftp-config.json",
+		"/K/code_online/technoboom_online/test.php",
+		"/K/code_online/technoboom_online/cronjobs/webser_1.php",
+		"/K/code_online/technoboom_online/cronjobs/give_brand.php",
+		"/K/code_online/technoboom_online/cronjobs/test.php",
+		"/K/code_online/technoboom_online/cronjobs/webser.php",
+		"/K/code_online/technoboom_online/ajax/cart.php",
+		"/K/code_online/technoboom_online/cronjobs/log.txt",
+		"/K/code_online/star.ge/ghg/moduls/news.php",
+		"/K/code_online/star.ge/ghg/sftp-config.json",
+		"/K/code_online/star.ge/ghg/skins/MainContent.php",
+		"/K/code_online/star.ge/ghg/moduls/MainContent.php",
+		"/K/code_online/star.ge/ghg/skins/__header.inc.php",
+		"/K/code_online/star.ge/ghg/skins/singleContent.php",
+		"/K/code_online/star.ge/ghg/moduls/recommendations.php",
+		"/K/code_online/star.ge/ghg/skins/news.php",
+		"/K/code_online/star.ge/ghg/scss/_mainContent.scss",
+		"/K/code_online/star.ge/ghg/pcms/config.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/news/templates/content_full.template.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/news/index.php",
+		"/K/code_online/star.ge/ghg/scss/app.scss",
+		"/K/code_online/star.ge/ghg/scss/_fullscreenMenu.scss",
+		"/K/code_online/star.ge/ghg/js/ghg.js",
+		"/K/code_online/star.ge/ghg/moduls/feedback.php",
+		"/K/code_online/star.ge/ghg/ghg.sublime-project",
+		"/K/code_online/star.ge/ghg/scss/_variables.scss",
+		"/K/code_online/star.ge/ghg/scss/_reset.scss",
+		"/K/code_online/star.ge/ghg/pcms/plugins/sitemenu/templates/addtitle.template.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/sitemenu/index.php",
+		"/K/code_online/star.ge/ghg/skins/main_center.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/sitemenu/templates/tree.template.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/sitemenu/templates/contentlist.template.php",
+		"/K/code_online/star.ge/ghg/pcms/plugins/sitemenu/templates/edit_content_form.template.php",
+		"/K/code_online/star.ge/ghg/css/_mainContent.css",
+		"/K/code_online/star.ge/ghg/css/app.css",
+		"/K/code_online/star.ge/ghg/css/bootstrap.min.css",
+		"/K/code_online/star.ge/ghg/skins/__footer.inc.php",
+		"/K/code_online/star.ge/ghg/css/main.css",
+		"/K/code_online/geo-golf.ge/moduls/news.php",
+		"/K/code_online/geo-golf.ge/skins/news_main.php",
+		"/K/code_online/geo-golf.ge/js/golf.js",
+		"/K/code_online/geo-golf.ge/moduls/events.php",
+		"/K/code_online/geo-golf.ge/ajax/filter.php",
+		"/K/code_online/geo-golf.ge/ajax/events_calendar.php",
+		"/K/code_online/geo-golf.ge/skins/news.php",
+		"/K/code_online/geo-golf.ge/pcms/config.php",
+		"/K/code_online/geo-golf.ge/skins/events.php",
+		"/K/code_online/geo-golf.ge/ajax/events.php",
+		"/K/code_online/geo-golf.ge/ajax/doctor.php",
+		"/C/wamp64/www/npm/index.html",
+		"/C/wamp64/www/npm/webpack.mix.js",
+		"/C/wamp64/www/npm/package.json",
+		"/C/wamp64/www/npm/resources/js/app.js",
+		"/C/wamp64/www/npm/resources/js/bootstrap.js",
+		"/C/wamp64/www/npm/public/js/app.js",
+		"/C/wamp64/www/practice_laravel_57/resources/js/app.js",
+		"/C/wamp64/www/practice_laravel_57/resources/js/bootstrap.js",
+		"/C/wamp64/www/practice_laravel_57/webpack.mix.js",
+		"/C/wamp64/www/practice_laravel_57/server.php",
+		"/C/wamp64/www/practice_laravel_57/composer.json",
+		"/C/wamp64/www/practice_laravel_57/composer.lock",
+		"/C/wamp64/www/practice_laravel_57/package-lock.json",
+		"/C/wamp64/www/practice_laravel_57/package.json",
+		"/C/wamp64/www/echo_series/resources/js/bootstrap.js",
+		"/C/wamp64/www/echo_series/resources/views/welcome.blade.php",
+		"/C/wamp64/www/echo_series/routes/web.php",
+		"/C/wamp64/www/echo_series/package.json",
+		"/C/wamp64/www/echo_series/app/Events/OrderStatusUpdate.php",
+		"/C/wamp64/www/echo_series/storage/logs/laravel-2019-03-22.log",
+		"/C/wamp64/www/echo_series/.env",
+		"/C/wamp64/www/echo_series/config/app.php",
+		"/C/wamp64/www/echo_series/config/broadcasting.php",
+		"/C/wamp64/www/echo_series/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastServiceProvider.php",
+		"/C/wamp64/www/echo_series/routes/channels.php",
+		"/C/wamp64/www/echo_series/app/Http/Kernel.php",
+		"/C/wamp64/www/echo_series/app/Providers/AppServiceProvider.php",
+		"/C/wamp64/www/practice_laravel_57/resources/views/layouts/admin_master.blade.php",
+		"/C/wamp64/www/practice_laravel_57/app/Providers/AppServiceProvider.php",
+		"/C/wamp64/www/practice_laravel_57/app/Http/Controllers/GuideController.php",
+		"/C/wamp64/www/practice_laravel_57/app/Notifications/TourCreated.php",
+		"/C/wamp64/www/practice_laravel_57/resources/sass/admin.scss",
+		"/C/wamp64/www/practice_laravel_57/routes/web.php",
+		"/C/wamp64/www/practice_laravel_57/app/Http/Controllers/TourController.php",
+		"/C/wamp64/www/practice_laravel_57/app/Tour.php",
+		"/C/wamp64/www/practice_laravel_57/app/Guide.php",
+		"/C/wamp64/www/practice_laravel_57/app/Providers/EventServiceProvider.php",
+		"/C/wamp64/www/practice_laravel_57/app/Listeners/SendTourCreatedNotification.php",
+		"/C/wamp64/www/practice_laravel_57/app/Events/TourCreated.php",
+		"/C/wamp64/www/practice_laravel_57/app/Providers/SendTourCreatedNotification.php",
+		"/C/wamp64/www/practice_laravel_57/app/Events/GuideCreated.php",
+		"/C/wamp64/www/practice_laravel_57/app/Listeners/SendGuideCreatedNotification.php",
+		"/C/wamp64/www/practice_laravel_57/resources/views/admin/mail/guideCreated.blade.php",
+		"/C/wamp64/www/practice_laravel_57/resources/views/admin/tour/create.blade.php",
+		"/C/wamp64/www/practice_laravel_57/app/Mail/GuideCreated.php",
+		"/C/wamp64/www/practice_laravel_57/.env",
+		"/C/wamp64/www/practice_laravel_57/storage/logs/laravel-2019-03-21.log",
+		"/C/wamp64/www/practice_laravel_57/resources/views/admin/tour/edit.blade.php",
+		"/C/wamp64/www/practice_laravel_57/resources/views/admin/includes/input_error.blade.php",
+		"/C/wamp64/www/practice_laravel_57/resources/views/admin/includes/dashboard_header.blade.php"
+	],
+	"find":
+	{
+		"height": 80.0
+	},
+	"find_in_files":
+	{
+		"height": 194.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"section",
+			"url",
+			"project-highlights__wrap",
+			"secrion3",
+			"project-highlights__wrap",
+			"col-sm-4 col-lg-4",
+			"<img src=\"",
+			"p",
+			"partners",
+			"reasdfasd",
+			"feedback",
+			"slide1",
+			"slide2",
+			"about",
+			"section",
+			"slide2",
+			"slide1",
+			"section3",
+			"slide1",
+			"siema",
+			"section2",
+			"seaction2",
+			"siema",
+			"four",
+			"sieam",
+			"four-season__text",
+			"72BB88",
+			"gree",
+			"50px",
+			"green",
+			"menu",
+			"feed",
+			"h4",
+			"h1",
+			"72BB88",
+			"{{$footer->",
+			"{{$socials->",
+			"SliderController"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								709
+							]
+						],
+						"settings":
+						{
+							"SL.97.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										709,
+										710
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										687,
+										688
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/landing_kokta_mitarbi.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5828,
+								5828
+							]
+						],
+						"settings":
+						{
+							"SL.101.region_keys":
+							[
+							],
+							"SL.15.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5824,
+										5827
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3599,
+										3602
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5824,
+										5827
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3599,
+										3602
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1953.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/landing_lisi.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7406,
+								6332
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7303,
+										7306
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6429,
+										6432
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4974.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/js/landing.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2608,
+								2608
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 126,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2611,
+										2612
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										52,
+										53
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "public/css/landing.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2853,
+								2853
+							]
+						],
+						"settings":
+						{
+							"SL.106.region_keys":
+							[
+							],
+							"auto_indent": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2856,
+										2857
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2838,
+										2839
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2857,
+										2858
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2838,
+										2839
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Palenight.tmTheme",
+							"history_list_is_closing": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4646.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/css/responsive.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2846,
+								2846
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1057,
+										1058
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										998,
+										999
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Palenight.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5836.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/css/buttons.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"SL.122.region_keys":
+							[
+							],
+							"auto_indent": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 122,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										195,
+										196
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										111,
+										112
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Palenight.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "public/css/scrollDown.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1573,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										187,
+										188
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										73,
+										74
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										215,
+										216
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										193,
+										194
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Palenight.tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 90.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.639476961395,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 188.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 205.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "lisi.digitalmate.io.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"respo",
+				"public\\css\\responsive.css"
+			],
+			[
+				"ladnjs",
+				"public\\js\\landing.js"
+			],
+			[
+				"web",
+				"webpack.mix.js"
+			],
+			[
+				"landing_lisi",
+				"resources\\views\\landing_lisi.blade.php"
+			],
+			[
+				"roweb",
+				"routes\\web.php"
+			],
+			[
+				"rowe",
+				"routes\\web.php"
+			],
+			[
+				"pc",
+				"pcms\\config.php"
+			],
+			[
+				"pcmconf",
+				"pcms\\config.php"
+			],
+			[
+				"ghj",
+				"js\\ghg.js"
+			],
+			[
+				"header",
+				"skins\\__header.inc.php"
+			],
+			[
+				"scapp",
+				"scss\\app.scss"
+			],
+			[
+				"scssmain",
+				"scss\\_mainContent.scss"
+			],
+			[
+				"sin",
+				"skins\\singleContent.php"
+			],
+			[
+				"skinew",
+				"skins\\news.php"
+			],
+			[
+				"monews",
+				"moduls\\news.php"
+			],
+			[
+				"skimainc",
+				"skins\\MainContent.php"
+			],
+			[
+				"mainco",
+				"moduls\\MainContent.php"
+			],
+			[
+				"_header",
+				"skins\\__header.inc.php"
+			],
+			[
+				"skimain",
+				"skins\\MainContent.php"
+			],
+			[
+				"apps",
+				"scss\\app.scss"
+			],
+			[
+				"fullscreenMenu",
+				"scss\\_fullscreenMenu.scss"
+			],
+			[
+				"pcmcon",
+				"pcms\\config.php"
+			],
+			[
+				"ghgjs",
+				"js\\ghg.js"
+			],
+			[
+				"skiMainContent",
+				"skins\\MainContent.php"
+			],
+			[
+				"appsc",
+				"scss\\app.scss"
+			],
+			[
+				"heade",
+				"skins\\__header.inc.php"
+			],
+			[
+				"skimaincont",
+				"skins\\MainContent.php"
+			],
+			[
+				"resesc",
+				"scss\\_reset.scss"
+			],
+			[
+				"pcmconfi",
+				"pcms\\config.php"
+			],
+			[
+				"skifooter",
+				"skins\\__footer.inc.php"
+			],
+			[
+				"skhead",
+				"skins\\__header.inc.php"
+			],
+			[
+				"newma",
+				"skins\\news_main.php"
+			],
+			[
+				"gol",
+				"js\\golf.js"
+			],
+			[
+				"modnew",
+				"moduls\\news.php"
+			],
+			[
+				"moevent",
+				"moduls\\events.php"
+			],
+			[
+				"welc",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"channels",
+				"routes\\channels.php"
+			],
+			[
+				"boraservipre",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastServiceProvider.php"
+			],
+			[
+				"appserve",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"sasadmin",
+				"resources\\sass\\admin.scss"
+			],
+			[
+				"admimaster",
+				"resources\\views\\layouts\\admin_master.blade.php"
+			],
+			[
+				"tourco",
+				"app\\Http\\Controllers\\TourController.php"
+			],
+			[
+				"guide",
+				"app\\Http\\Controllers\\GuideController.php"
+			],
+			[
+				"apptour",
+				"app\\Tour.php"
+			],
+			[
+				"toucop",
+				"app\\Http\\Controllers\\TourController.php"
+			],
+			[
+				"appto",
+				"app\\Tour.php"
+			],
+			[
+				"eveserpro",
+				"app\\Providers\\EventServiceProvider.php"
+			],
+			[
+				"notourcre",
+				"app\\Notifications\\TourCreated.php"
+			],
+			[
+				"evenguide",
+				"app\\Events\\GuideCreated.php"
+			],
+			[
+				"guico",
+				"app\\Http\\Controllers\\GuideController.php"
+			],
+			[
+				"appguide",
+				"app\\Guide.php"
+			],
+			[
+				"admitorcre",
+				"resources\\views\\admin\\tour\\create.blade.php"
+			],
+			[
+				"atour",
+				"app\\Tour.php"
+			],
+			[
+				"adtoucre",
+				"resources\\views\\admin\\tour\\create.blade.php"
+			],
+			[
+				"guideco",
+				"app\\Http\\Controllers\\GuideController.php"
+			],
+			[
+				"sassvaria",
+				"resources\\sass\\_variables.scss"
+			],
+			[
+				"packs",
+				"package.json"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"projecontr",
+				"app\\Http\\Controllers\\ProjectsController.php"
+			],
+			[
+				"apppro",
+				"app\\Project.php"
+			],
+			[
+				"projec",
+				"app\\Http\\Controllers\\ProjectsController.php"
+			],
+			[
+				"createcar",
+				"database\\migrations\\2019_03_19_080121_create_cars_table.php"
+			],
+			[
+				"guideinde",
+				"resources\\views\\admin\\guide\\index.blade.php"
+			],
+			[
+				"guidco",
+				"app\\Http\\Controllers\\GuideController.php"
+			],
+			[
+				"guideedi",
+				"resources\\views\\admin\\guide\\edit.blade.php"
+			],
+			[
+				"layadmast",
+				"resources\\views\\layouts\\admin_master.blade.php"
+			],
+			[
+				"guidecon",
+				"app\\Http\\Controllers\\GuideController.php"
+			],
+			[
+				"admiguidcrea",
+				"resources\\views\\admin\\guide\\create.blade.php"
+			],
+			[
+				"dashboa",
+				"resources\\views\\admin\\dashboard.blade.php"
+			],
+			[
+				"dashboar",
+				"public\\css\\dashboard.css"
+			],
+			[
+				"creatguide",
+				"database\\migrations\\2019_03_15_144056_create_guides_table.php"
+			],
+			[
+				"admima",
+				"resources\\views\\layouts\\admin_master.blade.php"
+			],
+			[
+				"AuthenticatesUsers",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"logincor",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"Illuminate\\Routing\\Router.php ",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php"
+			],
+			[
+				"Authentication Routes",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\AuthenticateSession.php"
+			],
+			[
+				"appprovidete",
+				"app\\Providers\\TelescopeServiceProvider.php"
+			],
+			[
+				"projeco",
+				"app\\Http\\Controllers\\ProjectsController.php"
+			],
+			[
+				"user",
+				"app\\User.php"
+			],
+			[
+				"atuser",
+				"app\\Providers\\AuthServiceProvider.php"
+			],
+			[
+				"projeshow",
+				"resources\\views\\project\\show.blade.php"
+			],
+			[
+				"propol",
+				"app\\Policies\\ProjectPolicy.php"
+			],
+			[
+				"appuser",
+				"app\\User.php"
+			],
+			[
+				"home",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"appproj",
+				"app\\Project.php"
+			],
+			[
+				"rwe",
+				"routes\\web.php"
+			],
+			[
+				"creapro",
+				"database\\migrations\\2019_03_12_112926_create_projects_table.php"
+			],
+			[
+				"projeccontr",
+				"app\\Http\\Controllers\\ProjectsController.php"
+			],
+			[
+				"projectrea",
+				"resources\\views\\project\\create.blade.php"
+			],
+			[
+				"projsho",
+				"resources\\views\\project\\show.blade.php"
+			],
+			[
+				"apptas",
+				"app\\Task.php"
+			],
+			[
+				"projectas",
+				"app\\Http\\Controllers\\ProjectTasksController.php"
+			],
+			[
+				"proshow",
+				"resources\\views\\project\\show.blade.php"
+			],
+			[
+				"createtas",
+				"database\\migrations\\2019_03_14_084622_create_tasks_table.php"
+			],
+			[
+				"tasface",
+				"vendor\\swiftmailer\\swiftmailer\\tests\\acceptance\\Swift\\EmbeddedFileAcceptanceTest.php"
+			],
+			[
+				"creattas",
+				"database\\migrations\\2019_03_14_084622_create_tasks_table.php"
+			],
+			[
+				"reproje",
+				"resources\\views\\project.blade.php"
+			],
+			[
+				"laymas",
+				"resources\\views\\layouts\\master.blade.php"
+			],
+			[
+				"projecont",
+				"app\\Http\\Controllers\\ProjectsController.php"
+			],
+			[
+				"appproje",
+				"app\\Project.php"
+			],
+			[
+				".en",
+				".env"
+			],
+			[
+				"pageco",
+				"app\\Http\\Controllers\\PageController.php"
+			],
+			[
+				"conta",
+				"resources\\views\\contact.blade.php"
+			],
+			[
+				"landincon",
+				"app\\Http\\Controllers\\LandingController.php"
+			],
+			[
+				"appmodeca",
+				"app\\Models\\Callback.php"
+			],
+			[
+				"landijs",
+				"public\\js\\landing.js"
+			],
+			[
+				"landi",
+				"public\\css\\landing.css"
+			],
+			[
+				"layouland",
+				"resources\\views\\layouts\\landing.blade.php"
+			],
+			[
+				"feedba",
+				"resources\\views\\landing\\feedback.blade.php"
+			],
+			[
+				"LandingController",
+				"app\\Http\\Controllers\\LandingController.php"
+			],
+			[
+				"laylandin",
+				"resources\\views\\layouts\\landing.blade.php"
+			],
+			[
+				"buttons",
+				"public\\css\\buttons.css"
+			],
+			[
+				"landicss",
+				"public\\css\\landing.css"
+			],
+			[
+				"feedbac",
+				"resources\\views\\landing\\feedback.blade.php"
+			],
+			[
+				"lancss",
+				"public\\css\\landing.css"
+			],
+			[
+				"landicont",
+				"app\\Http\\Controllers\\LandingController.php"
+			],
+			[
+				"ladningcss",
+				"public\\css\\landing.css"
+			],
+			[
+				"reqcar",
+				"app\\Http\\Requests\\CarRequest.php"
+			],
+			[
+				"creatcar",
+				"database\\migrations\\2019_02_28_090239_create_cars_table.php"
+			],
+			[
+				"carco",
+				"app\\Http\\Controllers\\CarController.php"
+			],
+			[
+				"stubmode",
+				"resources\\stubs\\Model.stub"
+			],
+			[
+				"stubsc",
+				"resources\\stubs\\Controller.stub"
+			],
+			[
+				"stumo",
+				"resources\\stubs\\Model.stub"
+			],
+			[
+				"crudge",
+				"app\\Console\\Commands\\CrudGenerator.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 631.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"K:\\code_online\\promethea_voyages\\promethea_voyages.sublime-project"
+			],
+			[
+				"gh",
+				"K:\\code_online\\star.ge\\ghg\\ghg.sublime-project"
+			],
+			[
+				"one",
+				"C:\\wamp64\\www\\110-iliauni-online\\iliauni_online\\online.sublime-project"
+			],
+			[
+				"asa",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\asabroad\\asa.sublime-project"
+			],
+			[
+				"ASA",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\asabroad\\asa.sublime-project"
+			],
+			[
+				"stud",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\stud_new\\stud_new.sublime-project"
+			],
+			[
+				"lms",
+				"C:\\wamp64\\www\\LMS\\Lms.sublime-project"
+			],
+			[
+				"usm",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\usmd_kaxa\\usmd.sublime-project"
+			],
+			[
+				"usd",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\usmd_kaxa\\usmd.sublime-project"
+			],
+			[
+				"itd",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\itdc\\itdc.sublime-project"
+			],
+			[
+				"rm",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\rmbi\\rmbi.sublime-project"
+			],
+			[
+				"i",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\itdc\\itdc.sublime-project"
+			],
+			[
+				"it",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\itdc\\itdc.sublime-project"
+			],
+			[
+				"wa",
+				"C:\\wamp64\\www\\my-site\\wamp.sublime-project"
+			],
+			[
+				"eur",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\eurolux\\eurolux.sublime-project"
+			],
+			[
+				"lux",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\eurolux\\eurolux.sublime-project"
+			],
+			[
+				"l",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\eurolux\\eurolux.sublime-project"
+			],
+			[
+				"wamp",
+				"C:\\wamp64\\www\\my-site\\wamp.sublime-project"
+			],
+			[
+				"wam",
+				"C:\\wamp64\\www\\my-site\\wamp.sublime-project"
+			],
+			[
+				"jew",
+				"C:\\Users\\vaska\\Documents\\myproject\\jew.sublime-project"
+			],
+			[
+				"ts",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\tsmu_test\\tsmu_test.sublime-project"
+			],
+			[
+				"axa",
+				"C:\\Users\\vaska\\Documents\\SITE PROJECTS\\axali\\axali.sublime-project"
+			],
+			[
+				"boo",
+				"C:\\Users\\vaska\\Documents\\HTML CSS\\bootsrap.sublime-project"
+			],
+			[
+				"itdc",
+				"C:\\Users\\vaska\\Documents\\HTML CSS\\Sites\\itdc\\ITDC project.sublime-project"
+			],
+			[
+				"itds",
+				"C:\\Users\\vaska\\Documents\\HTML CSS\\ITDC\\ITDC project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

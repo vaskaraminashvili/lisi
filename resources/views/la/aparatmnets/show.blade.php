@@ -26,9 +26,10 @@
 						@la_display($module, 'title_ka')
 						@la_display($module, 'title_en')
 						@la_display($module, 'title_ru')
+						@la_display($module, 'floor')
 						@la_display($module, 'space')
-						@la_display($module, 'floor_id')
 						@la_display($module, 'active')
+						@la_display($module, 'rooms')
 					</div>
 				</div>
 			</div>

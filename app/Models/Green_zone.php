@@ -12,14 +12,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Green_zone extends Model
 {
     use SoftDeletes;
-	
+
 	protected $table = 'green_zones';
-	
+
 	protected $hidden = [
-        
+
     ];
 
 	protected $guarded = [];
 
 	protected $dates = ['deleted_at'];
+
 }

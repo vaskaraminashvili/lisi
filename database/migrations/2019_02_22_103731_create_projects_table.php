@@ -25,6 +25,7 @@ class CreateProjectsTable extends Migration
             ["text_en", "Text en", "Textarea", false, "", 0, 0, false],
             ["text_ru", "Text ru", "Textarea", false, "", 0, 0, false],
             ["image", "Image", "Image", false, "", 0, 0, false],
+            ["slug", "Slug", "String", false, "", 0, 256, false],
         ]);
 		
 		/*

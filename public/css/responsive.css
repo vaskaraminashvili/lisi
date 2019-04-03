@@ -1,0 +1,153 @@
+
+@media only screen and  (max-width: 575.98px) {
+    .flat-title {
+        width: 250px;
+        left: 5%;
+    }
+    .flat-title h2 {
+        font-size: 25px;
+        padding: 10px 16px;
+    }
+    .flat-text {
+        padding: 70px 50px 20px 50px;
+        top: -70px;
+    }
+    .flat-text p {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and  (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+
+@media only screen and  (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+
+@media only screen and  (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+
+@media only screen and  (min-width: 1200px) and (max-width: 1366.9px) {
+
+    .four-season__input {
+        max-width: 320px;
+    }
+    .four-season__text p {
+        font-size: 22px;
+    }
+
+    .chair_pointer {
+        left: 30%;
+        top: -38px;
+    }
+    .furtiture_pointer {
+        top: -100px;
+        left: 5%;
+    }
+}
+
+
+@media only screen and  (min-width: 1367px) {
+    #menu {
+        padding: 0 100px;
+    }
+    .four-season__img{
+        /*max-width: 670px;*/
+        max-height: 700px;
+    }
+}
+@media only screen and  (max-width: 992px) {
+    #popup__toggle {
+        right: -60px;
+    }
+    .feedback__buttons .call {
+        margin-right: 140px;
+    }
+    #menu {
+        padding: 0 10px;
+    }
+    .menu ul a {
+        padding: 0 6px;
+        font-size: 14px;
+    }
+    .intro__text {
+        width: 100%;
+        margin-left: 0px;
+        text-align: left;
+        padding: 0 10px;
+        padding-right: 30px;
+    }
+    .intro__text h1 {
+        font-size: 30px;
+    }
+    .intro__text p {
+        font-size: 18px;
+    }
+    .four-season__text h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+/*    .four-season__img{
+        background-image: url('../assets/268A2809 copy copy copy.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        max-width: 270px;
+    }*/
+    .four-season__text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .four-season__input {
+        max-width: 300px;
+    }
+   .statistics-row {
+    padding: 5px 10px;
+    }
+    .statistic {
+        margin-bottom: 5px;
+    }
+}
+@media only screen and   (max-width: 1366.9px) {
+    #menu {
+        padding: 0 20px;
+    }
+    #section3 .intro {
+        padding: 0px 20px;
+    }
+    #section1 .intro {
+        padding: 0px 20px;
+    }
+    #section2 .intro {
+        padding: 0px 60px;
+        overflow-x: hidden;
+    }
+
+    #section4 .intro {
+        padding: 0px 0px;
+    }
+    #section5 .intro {
+        padding: 0;
+   }
+    .footer {
+        padding: 0;
+    }
+    .project-highlights__body p {
+        font-size: 12px;
+        color: #000;
+    }
+    .project-highlights__wrap {
+        background-color: #FFF;
+        padding: 20px 10px;
+    }
+
+
+}

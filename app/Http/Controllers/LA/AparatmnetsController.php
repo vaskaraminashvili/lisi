@@ -22,8 +22,8 @@ use App\Models\Aparatmnet;
 class AparatmnetsController extends Controller
 {
 	public $show_action = true;
-	public $view_col = 'title_ka';
-	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru', 'space', 'floor_id', 'active'];
+	public $view_col = 'block_id';
+	public $listing_cols = ['id', 'title_ka', 'title_en', 'title_ru', 'floor', 'space', 'active', 'rooms'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

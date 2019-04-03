@@ -17,13 +17,14 @@ class CreateAparatmnetsTable extends Migration
      */
     public function up()
     {
-        Module::generate("Aparatmnets", 'aparatmnets', 'title_ka', 'fa-cube', [
+        Module::generate("Aparatmnets", 'aparatmnets', 'block_id', 'fa-cube', [
             ["title_ka", "Title ka", "String", false, "", 0, 256, false],
             ["title_en", "Title en", "String", false, "", 0, 256, false],
             ["title_ru", "Title ru", "String", false, "", 0, 256, false],
+            ["floor", "Floor", "Dropdown", false, "", 0, 0, false, "@floors"],
             ["space", "Space", "Integer", false, "", 0, 11, false],
-            ["floor_id", "Floor", "String", false, "", 0, 256, false],
             ["active", "Sold", "Checkbox", false, "true", 0, 0, false],
+            ["rooms", "Rooms", "Multiselect", false, "", 0, 0, false, ["bedroom","kitchen","balcony","toilet"]],
         ]);
 		
 		/*

@@ -26,7 +26,8 @@
 						@la_display($module, 'text_ka')
 						@la_display($module, 'text_en')
 						@la_display($module, 'text_ru')
-						@la_display($module, 'image')
+						@la_display($module, 'image_id')
+						@la_display($module, 'active')
 					</div>
 				</div>
 			</div>

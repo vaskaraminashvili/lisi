@@ -39,7 +39,7 @@
 		</tr>
 		</thead>
 		<tbody>
-
+			
 		</tbody>
 		</table>
 	</div>
@@ -56,15 +56,13 @@
 			{!! Form::open(['action' => 'LA\FloorsController@store', 'id' => 'floor-add-form']) !!}
 			<div class="modal-body">
 				<div class="box-body">
-                    {{-- @la_form($module) --}}
-
-
+                    @la_form($module)
+					
+					{{--
 					@la_input($module, 'title_ka')
 					@la_input($module, 'title_en')
 					@la_input($module, 'title_ru')
-					@la_input($module, 'block_id')
-					@la_input($module, 'apartments')
-
+					--}}
 				</div>
 			</div>
 			<div class="modal-footer">
@@ -101,7 +99,7 @@ $(function () {
 		@endif
 	});
 	$("#floor-add-form").validate({
-
+		
 	});
 });
 </script>
