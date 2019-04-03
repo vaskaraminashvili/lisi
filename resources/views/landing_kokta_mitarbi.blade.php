@@ -18,11 +18,14 @@
     <script src="js/fullpage.js"></script>
     <script src="js/siema.min.js"></script>
     <script src="js/landing.js"></script>
+    <script src="js/slick.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -85,6 +88,7 @@
                     <li data-menuanchor="thirdpage"><a href="#thirdpage">About section</a></li>
                     <li data-menuanchor="project_h"><a href="#project_h">Project h section</a></li>
                     <li data-menuanchor="summary"><a href="#summary">Project Summary</a></li>
+                    <li data-menuanchor="flat-overview"><a href="#flat-overview">Project Summary</a></li>
                     <li data-menuanchor="flat"><a href="#flat">Flat</a></li>
                     <li data-menuanchor="footer"><a href="#footer">footer</a></li>
                 </ul>
@@ -185,36 +189,30 @@
     </div>
     <div class=" section fp-auto-height project-highlights " id="section3">
         <div class="d-flex intro project-highlights__row">
-                    <div class="mb-2 mb-sm-0">
+                    <div class="mb-2 mb-sm-0 project-highlights__div">
                         <div class="project-highlights__wrap"
-                        data-aos="fade-down"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000"
-                        data-aos-delay="200"
+
                         >
                             <div class="project-highlights__header">
                                 <i class="fas fa-calendar-alt"></i>
                                 <h2 class="project-highlights__title">
-                                    About Project
+                                    O проекте
                                 </h2>
                             </div><!-- /.project-highlights__header -->
                             <div class="project-highlights__body">
-                                <p>Lorem ipsum do</p>
+                                <p>В 2015 году с правительством Грузии был оформлен меморандум о сотрудничестве по вопросам реабилитации и развития туристической инфраструктуры Бакуриани и Митарби</p>
                             </div><!-- /.project-highlights__body -->
                         </div><!-- /.project-highlights__wrap -->
                     </div>
-                    <div class="mb-2 mb-sm-0">
+                    <div class="mb-2 mb-sm-0 project-highlights__div">
                         <div class="project-highlights__wrap"
-                            data-aos="fade-down"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
+
                         >
 
                             <div class="project-highlights__header">
                                 <i class="fas fa-calendar-alt"></i>
                                 <h2 class="project-highlights__title">
-                                    About Project
+                                    O проекте
                                 </h2>
                             </div><!-- /.project-highlights__header -->
                             <div class="project-highlights__body">
@@ -222,17 +220,14 @@
                             </div><!-- /.project-highlights__body -->
                         </div><!-- /.project-highlights__wrap -->
                     </div>
-                    <div class="mb-2 mb-sm-0">
+                    <div class="mb-2 mb-sm-0 project-highlights__div">
                         <div class="project-highlights__wrap"
-                        data-aos="fade-down"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000"
-                        data-aos-delay="200"
+
                         >
                             <div class="project-highlights__header">
                                 <i class="fas fa-calendar-alt"></i>
                                 <h2 class="project-highlights__title">
-                                    About Project
+                                    O проекте
                                 </h2>
                             </div><!-- /.project-highlights__header -->
                             <div class="project-highlights__body">
@@ -240,18 +235,15 @@
                             </div><!-- /.project-highlights__body -->
                         </div><!-- /.project-highlights__wrap -->
                     </div>
-                    <div class="mb-2 mb-sm-0">
+                    <div class="mb-2 mb-sm-0 project-highlights__div">
                         <div class="project-highlights__wrap"
-                            data-aos="fade-down"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
+
                         >
 
                             <div class="project-highlights__header">
                                 <i class="fas fa-calendar-alt"></i>
                                 <h2 class="project-highlights__title">
-                                    About Project
+                                    O проекте
                                 </h2>
                             </div><!-- /.project-highlights__header -->
                             <div class="project-highlights__body">
@@ -259,18 +251,15 @@
                             </div><!-- /.project-highlights__body -->
                         </div><!-- /.project-highlights__wrap -->
                     </div>
-                    <div class="mb-2 mb-sm-0">
+                    <div class="mb-2 mb-sm-0 project-highlights__div">
                         <div class="project-highlights__wrap"
-                            data-aos="fade-down"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
+
                         >
 
                             <div class="project-highlights__header">
                                 <i class="fas fa-calendar-alt"></i>
                                 <h2 class="project-highlights__title">
-                                    About Project
+                                    O проекте
                                 </h2>
                             </div><!-- /.project-highlights__header -->
                             <div class="project-highlights__body">
@@ -361,6 +350,103 @@
 
         </div>
     </div>
+    <div class=" section flat-overview" id="section12">
+        <div class="d-flex intro">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-xl-9 pr-xl-0">
+                       <div class="flat-plan">
+                           <div class="row flat-plan-row1">
+                               <div class="col-xl-3">
+                                   <div class="flat-img">
+                                       <img class="img-fluid" data-title="room1" src="{{ asset('assets/flat_overview.png') }}">
+                                       <img class="img-fluid" data-title="room2" src="{{ asset('assets/flat_overview.png') }}">
+                                       <img class="img-fluid" data-title="room3" src="{{ asset('assets/flat_overview.png') }}">
+                                       <img class="img-fluid" data-title="room4" src="{{ asset('assets/flat_overview.png') }}">
+                                   </div>
+                               </div>
+                               <div class="col-xl-9">
+                                   <h2 class="text-left flat-name">
+                                       B-16 Flat
+                                   </h2>
+                                   <p class="text-left flat-description">
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, neque, magni? Cupiditate quod amet reiciendis doloremque id! Minima nemo voluptatum ipsa quidem maiores, magni natus sunt ex, nostrum, eveniet, quia.
+                                   </p>
+                                   <div class="flat-rooms">
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                       <div class="flat-room">
+                                           <h3 class="flat-room-name">Kitechen</h3>
+                                           <span class="flat-room-sqm">32</span>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div><!-- /.row -->
+                           <div class="row flat-plan-row2">
+                               <div class="col-12 ">
+                                    <div class="flat-plan-bottom">
+                                        <div class="">Apt Planiing</div>
+                                        <div class="apt-rooms"></div>
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-3">
+                        <div class="flat-plan-call">
+                            <div class="flat-plan-call-top">
+                                <h2>меморандум о сотрудничестве реабилитации </h2>
+                                <span class="flat-plan-call-number">
+                                    +38044 556 77 88
+                                </span>
+                                <img src="{{ asset('assets/logo.png') }}" alt="" class="flat-plan-call-img" />
+                                <p class="flat-plan-call-text">меморандум о сотрудничестве реабилитации </p>
+
+                            </div><!-- /.flat-plan-call-top -->
+                            <div class="flat-plan-call-bottom">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+                                  <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div><!-- /.flat-plan-call-bottom -->
+
+                        </div>
+                   </div>
+               </div><!-- /.row -->
+           </div><!-- /.container-fluid -->
+
+        </div>
+    </div>
     <div class="section flat" id="section5">
         <div class="d-flex intro">
             <div class="container-fluid">
@@ -433,7 +519,7 @@
         $(document).ready(function() {
           $('#fullpage').fullpage({
             // menu: '#myMenu',
-            anchors: ['firstPage', 'secondPage', 'thirdpage', 'project_h' , 'summary', 'flat' , 'footer'],
+            anchors: ['firstPage', 'secondPage', 'thirdpage', 'project_h' , 'summary', 'flat_overview', 'flat' , 'footer'],
             controlArrows : false,
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
@@ -469,33 +555,7 @@
                 }else{
                     $('.downArrow').fadeOut('slow');
                 }
-                if (nextIndex.anchor == 'project_h') {
-                    $('.panel_call').css('background', '#fff');
-                    $('.img-circle').css('background', '#fff');
-                    $('.circlephone').css('background', '#fff');
-                    $('.circle-fill').css('background', '#fff');
-                    $('.img-circleblock').addClass('changed');
-                    $('.feedback__buttons .btn-brand').css({
-                        background: '#fff',
-                        borderColor: '#fff',
-                    });
-                    $('.feedback__buttons .call').css({
-                        color: '#E2D82F'
-                    });
-                }else{
-                    $('.panel_call').css('background', '#E2D82F');
-                    $('.img-circle').css('background', '#E2D82F');
-                    $('.circlephone').css('background', '#E2D82F');
-                    $('.circle-fill').css('background', '#E2D82F');
-                    $('.img-circleblock').removeClass('changed');
-                    $('.feedback__buttons .btn-brand').css({
-                        background: '#E2D82F',
-                        borderColor: '#E2D82F',
-                    });
-                    $('.feedback__buttons .call').css({
-                        color: '#fff'
-                    });
-                }
+
                 if (nextIndex.anchor == 'summary') {
                     $('.n_animate span').animateNumber({ number: 165 } , 500);
                 }

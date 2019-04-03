@@ -1,5 +1,15 @@
 // const Swal = require('sweetalert2');
 $(function(){
+    $('.flat-img').slick({
+        arrows:false,
+        dots:true,
+        appendDots :$('.apt-rooms'),
+        customPaging : function(slider, i) {
+                var title = $(slider.$slides.get(i));
+                var title2 = title.find('div').find('img').data('title');
+                return '<a class="pager__item badge badge-pill shadow-sm"> '+title2+' </a>';
+            },
+    });
     $('body').keyup(function(e) {
         if ( $('.callback').hasClass('active')) {
             if (e.keyCode == 27) {

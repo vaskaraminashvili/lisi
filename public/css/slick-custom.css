@@ -1,0 +1,20 @@
+.slick-dots li {
+    width: auto;
+    height: auto;
+}
+.slick-dots{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pager__item{
+    padding: 13px 30px;
+    background: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.pager__item:hover{
+    color: #fff !important;
+    background: #E2D82F;
+}
