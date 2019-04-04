@@ -10,6 +10,11 @@ $(function(){
                 return '<a class="pager__item badge badge-pill shadow-sm"> '+title2+' </a>';
             },
     });
+    $('.buildings-section__slider').slick({
+        // autoplay: true,
+        // autoplaySpeed: 1000,
+        slidesToShow: 4,
+    });
     $('body').keyup(function(e) {
         if ( $('.callback').hasClass('active')) {
             if (e.keyCode == 27) {

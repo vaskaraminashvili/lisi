@@ -350,7 +350,7 @@
 
         </div>
     </div>
-    <div class=" section flat-overview" id="section12">
+    <div class=" section flat-overview " id="section12">
         <div class="d-flex intro">
            <div class="container-fluid">
                <div class="row">
@@ -424,19 +424,13 @@
                             <div class="flat-plan-call-bottom">
                                 <form>
                                   <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                   </div>
                                   <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                   </div>
-                                  <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                  </div>
-                                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                                  <button type="submit" class="btn btn-block btn-light">ОТПРАВИТЬ</button>
                                 </form>
                             </div><!-- /.flat-plan-call-bottom -->
 
@@ -444,35 +438,383 @@
                    </div>
                </div><!-- /.row -->
            </div><!-- /.container-fluid -->
-
         </div>
     </div>
+    <div class="section buildings-section " id="section13">
+        <div class="d-flex intro">
+           <div class="container-fluid">
+               <div class="row">
+                    <div class="col-12">
+                        <div class="buildings-title-section">
+                            <h2 class="text-left">Kokhta Mitarbi Buildings</h2>
+                        </div><!-- /.buildings-title -->
+                    </div><!-- /.col -->
+               </div><!-- /.row -->
+               <div class="row">
+                    <div class="col-12">
+                        <div class="buildings-section__slider">
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buildings-section__slide">
+                                <div class="buildings-section__slide-top">
+                                    <h3 class="slide-title">Building C</h3>
+                                </div>
+                                <div class="slide-middle-bottom">
+                                    <div class="position-relative buildings-section__slide-middle">
+                                        <div class="sold-flag">
+                                            <img src="{{ asset('assets/sold_out.png') }}" class="img-fluid" alt="" />
+                                        </div>
+                                        <img class="img-fluid slide-image" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                                        <div class="slide-image-bottom">
+                                            <p>80 APART - B</p>
+                                        </div>
+                                    </div>
+                                    <div class="buildings-section__slide-bottom">
+                                        <p class="sold-out">sold out </p>
+                                        <p class="sales-ended">sales ended</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /.col -->
+               </div><!-- /.row -->
+           </div><!-- /.container-fluid -->
+
+        </div>
+    </div><!-- /#section12.section building -->
     <div class="section flat" id="section5">
+        <div  class="slide" id="slide1" data-anchor="slide1">
+            <div class="d-flex intro">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="offset-sm-2 offset-xl-7 col-xl-5">
+                            <div class="position-relative flat-wrap">
+                                <div class=" flat-title">
+                                    <h2>new apartment</h2>
+                                </div><!-- /.flat-title -->
+                                <div class=" flat-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quaerat! Error, qui, similique! Facilis porro, eaque illum enim quae hic? Laudantium quae iste, ratione culpa odit voluptatum in aperiam non!</p>
+                                </div><!-- /.flat-text -->
+
+                            </div><!-- /.flat-wrap -->
+                        </div><!-- /.col-xl-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+
+            </div>
+        </div>
+        <div  class="slide" id="slide2" data-anchor="slide2">
+            <div class="d-flex intro">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="offset-sm-2 offset-xl-7 col-xl-5">
+                            <div class="position-relative flat-wrap">
+                                <div class=" flat-title">
+                                    <h2>new apartment</h2>
+                                </div><!-- /.flat-title -->
+                                <div class=" flat-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quaerat! Error, qui, similique! Facilis porro, eaque illum enim quae hic? Laudantium quae iste, ratione culpa odit voluptatum in aperiam non!</p>
+                                </div><!-- /.flat-text -->
+
+                            </div><!-- /.flat-wrap -->
+                        </div><!-- /.col-xl-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+
+            </div>
+        </div>
+    </div>
+    <div class="section houseInterior-section" id="section14">
         <div class="d-flex intro">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="d-none d-xl-flex col-xl-7 flat__pointers">
-                        <div class="furtiture_pointer">
-                            <img src="assets/furniture.png" class="img-fluid" alt="" />
-                            <p>wooden</p>
-                        </div>
-                        <div class="chair_pointer">
-                            <img src="assets/chair_pointer.png" class="img-fluid" alt="" />
-                            <p>all asset ready</p>
-                        </div>
-                    </div><!-- /.col-xl-7 -->
-                    <div class="offset-sm-2 offset-xl-0 col-xl-5">
-                        <div class="position-relative flat-wrap">
-                            <div class=" flat-title">
-                                <h2>new apartment</h2>
-                            </div><!-- /.flat-title -->
-                            <div class=" flat-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quaerat! Error, qui, similique! Facilis porro, eaque illum enim quae hic? Laudantium quae iste, ratione culpa odit voluptatum in aperiam non!</p>
-                            </div><!-- /.flat-text -->
-                        </div><!-- /.flat-wrap -->
+                    <div class="position-relative col-xl-5">
+                        <div class=" houseInterior__left">
+                            <img class="img-fluid img1" src="{{ asset('assets/slide -1.png') }}" alt="" />
+                            <img class="img-fluid img2" src="{{ asset('assets/top0.png') }}" alt="" />
+                            <img class="img-fluid img3" src="{{ asset('assets/top1.png') }}" alt="" />
+                        </div><!-- /.houseInterior__left -->
                     </div><!-- /.col-xl-6 -->
+                    <div class="col-xl-1"></div><!-- /.col-xl-1 -->
+                    <div class=" col-xl-4">
+                        <div class="houseInterior__right">
+                            <div class="houseInterior__top">
+                                <h2 class="houseInterior__title">Таунхаусы и дуплексы</h2>
+                                <p class="houseInterior__text">В 2015 году с правительством Грузии был оформлен меморандум о сотрудничестве по вопросам реабилитации</p>
+                            </div><!-- /.houseInterior__right-top -->
+                            <div class="houseInterior__middle">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+
+                                  <button type="submit" class="btn btn-dark btn-block">Submit</button>
+                                </form>
+                            </div><!-- /.house-interior__right-middle -->
+
+                        </div>
+                    </div><!-- /.col-xl-6 -->
+                    <div class="col-xl-2"></div><!-- /.col-xl-2 -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
+        </div>
+    </div>
+    <div class="section houseInterior-section" id="section15">
+        <div class="d-flex intro">
+            <div class="three-images-wrapper">
+
+                <div class="three-images">
+                    <div class="featured-image-outer">
+                        <div class="featured-image-inner" style="background: #fff">
+                            <div class="featured-image-upper">
+                                <h2>Инвестирование в Грузии </h2>
+                                <p>Грузия занимает 9 место в мире по легкости ведения бизнеса.Только за 2018 год ее посетило свыше 8 000 000 туристов.</p>
+                                <button class="btn btn-light border ">проводить</button>
+                            </div>
+                            <div class="featured-image-middle">
+                                <div class="invest-statistic ">
+                                    <div class="invest-statistic__number">
+                                        <h3 class="stat_anime">
+                                            <span class="stat_anime-prefix"></span>
+                                            <span class="stat_anime-number">50</span>
+                                            <span class="stat_anime-suffix"></span>
+                                        </h3>
+                                    </div>
+                                    <div class="invest-statistic__text">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest-statistic ">
+                                    <div class="invest-statistic__number">
+                                        <h3 class="stat_anime">
+                                            <span class="stat_anime-prefix"></span>
+                                            <span class="stat_anime-number">50</span>
+                                            <span class="stat_anime-suffix"></span>
+                                        </h3>
+                                    </div>
+                                    <div class="invest-statistic__text">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest-statistic ">
+                                    <div class="invest-statistic__number">
+                                        <h3 class="stat_anime">
+                                            <span class="stat_anime-prefix"></span>
+                                            <span class="stat_anime-number">50</span>
+                                            <span class="stat_anime-suffix"></span>
+                                        </h3>
+                                    </div>
+                                    <div class="invest-statistic__text">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest-statistic ">
+                                    <div class="invest-statistic__number">
+                                        <h3 class="stat_anime">
+                                            <span class="stat_anime-prefix"></span>
+                                            <span class="stat_anime-number">50</span>
+                                            <span class="stat_anime-suffix"></span>
+                                        </h3>
+                                    </div>
+                                    <div class="invest-statistic__text">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest-statistic ">
+                                    <div class="invest-statistic__number">
+                                        <h3 class="stat_anime">
+                                            <span class="stat_anime-prefix"></span>
+                                            <span class="stat_anime-number">50</span>
+                                            <span class="stat_anime-suffix"></span>
+                                        </h3>
+                                    </div>
+                                    <div class="invest-statistic__text">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two-images">
+                        <div class="two-images-outer">
+                            <div class="two-images-inner" style="background-image: url('assets/invest.png');">
+                               <div class="featured-image-upper">
+                                   <h2>Инвестирование в Грузии </h2>
+                                   <p>Грузия занимает 9 место в мире по легкости ведения бизнеса.Только за 2018 год ее посетило свыше 8 000 000 туристов.</p>
+                                   <button class="btn btn-light border ">проводить</button>
+                               </div>
+                               <div class="featured-image-middle">
+                                   <div class="invest-statistic ">
+                                       <div class="invest-statistic__number">
+                                           <h3 class="stat_anime">
+                                               <span class="stat_anime-prefix"></span>
+                                               <span class="stat_anime-number">50</span>
+                                               <span class="stat_anime-suffix"></span>
+                                           </h3>
+                                       </div>
+                                       <div class="invest-statistic__text">
+                                           <p>Lorem ipsum dolor sit.</p>
+                                       </div>
+                                   </div>
+                                   <div class="invest-statistic ">
+                                       <div class="invest-statistic__number">
+                                           <h3 class="stat_anime">
+                                               <span class="stat_anime-prefix"></span>
+                                               <span class="stat_anime-number">50</span>
+                                               <span class="stat_anime-suffix"></span>
+                                           </h3>
+                                       </div>
+                                       <div class="invest-statistic__text">
+                                           <p>Lorem ipsum dolor sit.</p>
+                                       </div>
+                                   </div>
+                                   <div class="invest-statistic ">
+                                       <div class="invest-statistic__number">
+                                           <h3 class="stat_anime">
+                                               <span class="stat_anime-prefix"></span>
+                                               <span class="stat_anime-number">50</span>
+                                               <span class="stat_anime-suffix"></span>
+                                           </h3>
+                                       </div>
+                                       <div class="invest-statistic__text">
+                                           <p>Lorem ipsum dolor sit.</p>
+                                       </div>
+                                   </div>
+                                   <div class="invest-statistic ">
+                                       <div class="invest-statistic__number">
+                                           <h3 class="stat_anime">
+                                               <span class="stat_anime-prefix"></span>
+                                               <span class="stat_anime-number">50</span>
+                                               <span class="stat_anime-suffix"></span>
+                                           </h3>
+                                       </div>
+                                       <div class="invest-statistic__text">
+                                           <p>Lorem ipsum dolor sit.</p>
+                                       </div>
+                                   </div>
+                                   <div class="invest-statistic ">
+                                       <div class="invest-statistic__number">
+                                           <h3 class="stat_anime">
+                                               <span class="stat_anime-prefix"></span>
+                                               <span class="stat_anime-number">50</span>
+                                               <span class="stat_anime-suffix"></span>
+                                           </h3>
+                                       </div>
+                                       <div class="invest-statistic__text">
+                                           <p>Lorem ipsum dolor sit.</p>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -519,7 +861,7 @@
         $(document).ready(function() {
           $('#fullpage').fullpage({
             // menu: '#myMenu',
-            anchors: ['firstPage', 'secondPage', 'thirdpage', 'project_h' , 'summary', 'flat_overview', 'flat' , 'footer'],
+            anchors: ['firstPage', 'secondPage', 'thirdpage', 'project_h' , 'summary', 'flat_overview','buildings' , 'flat' ,'houseInterior', 'invest', 'footer'],
             controlArrows : false,
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
@@ -538,7 +880,6 @@
             onLeave : function(index, nextIndex, direction){
                 if (nextIndex.anchor == 'footer') {
                     $('.feedback').addClass('move-up');
-                    console.log($('.feedback').offset());
                 }else{
                     $('.feedback').removeClass('move-up');
                 }
@@ -558,6 +899,9 @@
 
                 if (nextIndex.anchor == 'summary') {
                     $('.n_animate span').animateNumber({ number: 165 } , 500);
+                }
+                if (nextIndex.anchor == 'invest') {
+                    $('.stat_anime .stat_anime-number').animateNumber({ number: 165 } , 500);
                 }
 
             },
