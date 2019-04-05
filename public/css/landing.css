@@ -1014,6 +1014,9 @@ z-index: 1;
   text-align: left;
   padding: 0 200px;
 }
+.featured-image-upper.two-images-upper{
+  padding: 0px 100px 0 230px;
+}
 .featured-image-middle{
   display: flex;
   justify-content: space-between;
@@ -1021,6 +1024,9 @@ z-index: 1;
   padding: 0 60px 0px 200px;
   width: 100%;
 
+}
+.featured-image-middle.two-images-middle{
+  padding: 0 10px 0px 230px;
 }
 .featured-image-upper h2{
   font-size: 40px;

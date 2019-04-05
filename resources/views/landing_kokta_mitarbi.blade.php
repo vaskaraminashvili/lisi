@@ -743,12 +743,12 @@
                     <div class="two-images">
                         <div class="two-images-outer">
                             <div class="two-images-inner" style="background-image: url('assets/invest.png');">
-                               <div class="featured-image-upper">
+                               <div class="featured-image-upper two-images-upper">
                                    <h2>Инвестирование в Грузии </h2>
                                    <p>Грузия занимает 9 место в мире по легкости ведения бизнеса.Только за 2018 год ее посетило свыше 8 000 000 туристов.</p>
                                    <button class="btn btn-light border ">проводить</button>
                                </div>
-                               <div class="featured-image-middle">
+                               <div class="featured-image-middle two-images-middle">
                                    <div class="invest-statistic ">
                                        <div class="invest-statistic__number">
                                            <h3 class="stat_anime">
