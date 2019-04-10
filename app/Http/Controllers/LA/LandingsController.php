@@ -23,7 +23,7 @@ class LandingsController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title';
-	public $listing_cols = ['id', 'title', 'landing_home', 'season', 'about_project', 'project_info', 'project_summary', 'landing_apartment', 'footer'];
+	public $listing_cols = ['id', 'title', 'section_1', 'section_2', 'section_3', 'section_4', 'section_5', 'section_6', 'section_7', 'section_8', 'section_9', 'section_10', 'section_11', 'section_12'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

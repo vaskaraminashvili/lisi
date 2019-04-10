@@ -1,4 +1,4 @@
-@extends('layouts.landing_mitarbi' ,['socials' => $socials , 'anchors' => $anchors ,'footer' => $footer])
+@extends('layouts.landing_mitarbi' ,['socials' => $socials , 'anchors' => $anchors])
 @section('content')
     {{-- @include('landing.home') --}}
     @foreach ($data as $key => $element)

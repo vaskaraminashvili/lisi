@@ -1,0 +1,67 @@
+@extends("la.layouts.app")
+
+@section("contentheader_title")
+	<a href="{{ url(config('laraadmin.adminRoute') . '/section_5s') }}">Section 5</a> :
+@endsection
+@section("contentheader_description", $section_5->$view_col)
+@section("section", "Section 5s")
+@section("section_url", url(config('laraadmin.adminRoute') . '/section_5s'))
+@section("sub_section", "Edit")
+
+@section("htmlheader_title", "Section 5s Edit : ".$section_5->$view_col)
+
+@section("main-content")
+
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+<div class="box">
+	<div class="box-header">
+		
+	</div>
+	<div class="box-body">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				{!! Form::model($section_5, ['route' => [config('laraadmin.adminRoute') . '.section_5s.update', $section_5->id ], 'method'=>'PUT', 'id' => 'section_5-edit-form']) !!}
+					@la_form($module)
+					
+					{{--
+					@la_input($module, 'title')
+					@la_input($module, 'text')
+					@la_input($module, 'is_title')
+					@la_input($module, 'statistic_prefix')
+					@la_input($module, 'statistic_number')
+					@la_input($module, 'statistic_sufix')
+					@la_input($module, 'statistic_text')
+					@la_input($module, 'landing_id')
+					@la_input($module, 'background_image')
+					@la_input($module, 'active')
+					--}}
+                    <br>
+					<div class="form-group">
+						{!! Form::submit( 'Update', ['class'=>'btn btn-success']) !!} <button class="btn btn-default pull-right"><a href="{{ url(config('laraadmin.adminRoute') . '/section_5s') }}">Cancel</a></button>
+					</div>
+				{!! Form::close() !!}
+			</div>
+		</div>
+	</div>
+</div>
+
+@endsection
+
+@push('scripts')
+<script>
+$(function () {
+	$("#section_5-edit-form").validate({
+		
+	});
+});
+</script>
+@endpush

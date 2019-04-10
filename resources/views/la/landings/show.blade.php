@@ -24,13 +24,18 @@
 					</div>
 					<div class="panel-body">
 						@la_display($module, 'title')
-						@la_display($module, 'landing_home')
-						@la_display($module, 'season')
-						@la_display($module, 'about_project')
-						@la_display($module, 'project_info')
-						@la_display($module, 'project_summary')
-						@la_display($module, 'landing_apartment')
-						@la_display($module, 'footer')
+						@la_display($module, 'section_1')
+						@la_display($module, 'section_2')
+						@la_display($module, 'section_3')
+						@la_display($module, 'section_4')
+						@la_display($module, 'section_5')
+						@la_display($module, 'section_6')
+						@la_display($module, 'section_7')
+						@la_display($module, 'section_8')
+						@la_display($module, 'section_9')
+						@la_display($module, 'section_10')
+						@la_display($module, 'section_11')
+						@la_display($module, 'section_12')
 					</div>
 				</div>
 			</div>

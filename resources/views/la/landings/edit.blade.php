@@ -34,13 +34,18 @@
 					
 					{{--
 					@la_input($module, 'title')
-					@la_input($module, 'landing_home')
-					@la_input($module, 'season')
-					@la_input($module, 'about_project')
-					@la_input($module, 'project_info')
-					@la_input($module, 'project_summary')
-					@la_input($module, 'landing_apartment')
-					@la_input($module, 'footer')
+					@la_input($module, 'section_1')
+					@la_input($module, 'section_2')
+					@la_input($module, 'section_3')
+					@la_input($module, 'section_4')
+					@la_input($module, 'section_5')
+					@la_input($module, 'section_6')
+					@la_input($module, 'section_7')
+					@la_input($module, 'section_8')
+					@la_input($module, 'section_9')
+					@la_input($module, 'section_10')
+					@la_input($module, 'section_11')
+					@la_input($module, 'section_12')
 					--}}
                     <br>
 					<div class="form-group">

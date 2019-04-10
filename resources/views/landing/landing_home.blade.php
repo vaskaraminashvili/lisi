@@ -1,5 +1,3 @@
-{{-- {{dd($data)}} --}}
-{{-- {{dd($data)}} --}}
     <div class="position-relative section" id="section0">
         <nav id="menu" class="menu d-flex">
             <div>

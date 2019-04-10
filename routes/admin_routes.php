@@ -130,40 +130,71 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 
 
 
-	/* ================== Landing_Homes ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/landing_homes', 'LA\Landing_HomesController');
-	Route::get(config('laraadmin.adminRoute') . '/landing_home_dt_ajax', 'LA\Landing_HomesController@dtajax');
 
-	/* ================== Seasons ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/seasons', 'LA\SeasonsController');
-	Route::get(config('laraadmin.adminRoute') . '/season_dt_ajax', 'LA\SeasonsController@dtajax');
 
-	/* ================== About_projects ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/about_projects', 'LA\About_projectsController');
-	Route::get(config('laraadmin.adminRoute') . '/about_project_dt_ajax', 'LA\About_projectsController@dtajax');
 
 	/* ================== Landing_socials ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/landing_socials', 'LA\Landing_socialsController');
 	Route::get(config('laraadmin.adminRoute') . '/landing_social_dt_ajax', 'LA\Landing_socialsController@dtajax');
 
 
-	/* ================== Landing_footers ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/landing_footers', 'LA\Landing_footersController');
-	Route::get(config('laraadmin.adminRoute') . '/landing_footer_dt_ajax', 'LA\Landing_footersController@dtajax');
 
-	/* ================== Project_infos ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/project_infos', 'LA\Project_infosController');
-	Route::get(config('laraadmin.adminRoute') . '/project_info_dt_ajax', 'LA\Project_infosController@dtajax');
 
-	/* ================== Project_summaries ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/project_summaries', 'LA\Project_summariesController');
-	Route::get(config('laraadmin.adminRoute') . '/project_summary_dt_ajax', 'LA\Project_summariesController@dtajax');
 
-	/* ================== Landing_apartments ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/landing_apartments', 'LA\Landing_apartmentsController');
-	Route::get(config('laraadmin.adminRoute') . '/landing_apartment_dt_ajax', 'LA\Landing_apartmentsController@dtajax');
 
 	/* ================== Callbacks ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/callbacks', 'LA\CallbacksController');
 	Route::get(config('laraadmin.adminRoute') . '/callback_dt_ajax', 'LA\CallbacksController@dtajax');
+
+	/* ================== Section_1s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_1s', 'LA\Section_1sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_1_dt_ajax', 'LA\Section_1sController@dtajax');
+
+	/* ================== Section_2s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_2s', 'LA\Section_2sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_2_dt_ajax', 'LA\Section_2sController@dtajax');
+
+	/* ================== Section_3s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_3s', 'LA\Section_3sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_3_dt_ajax', 'LA\Section_3sController@dtajax');
+
+	/* ================== Partners ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/partners', 'LA\PartnersController');
+	Route::get(config('laraadmin.adminRoute') . '/partner_dt_ajax', 'LA\PartnersController@dtajax');
+
+	/* ================== Section_4s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_4s', 'LA\Section_4sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_4_dt_ajax', 'LA\Section_4sController@dtajax');
+
+	/* ================== Section_5s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_5s', 'LA\Section_5sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_5_dt_ajax', 'LA\Section_5sController@dtajax');
+
+	/* ================== Section_6s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_6s', 'LA\Section_6sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_6_dt_ajax', 'LA\Section_6sController@dtajax');
+
+	/* ================== Section_7s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_7s', 'LA\Section_7sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_7_dt_ajax', 'LA\Section_7sController@dtajax');
+
+	/* ================== Section_8s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_8s', 'LA\Section_8sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_8_dt_ajax', 'LA\Section_8sController@dtajax');
+
+	/* ================== Section_9s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_9s', 'LA\Section_9sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_9_dt_ajax', 'LA\Section_9sController@dtajax');
+
+	/* ================== Section_10s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_10s', 'LA\Section_10sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_10_dt_ajax', 'LA\Section_10sController@dtajax');
+
+	/* ================== Section_11s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_11s', 'LA\Section_11sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_11_dt_ajax', 'LA\Section_11sController@dtajax');
+
+	/* ================== Section_12s ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/section_12s', 'LA\Section_12sController');
+	Route::get(config('laraadmin.adminRoute') . '/section_12_dt_ajax', 'LA\Section_12sController@dtajax');
 });
