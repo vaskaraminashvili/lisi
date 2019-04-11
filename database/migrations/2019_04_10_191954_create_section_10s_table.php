@@ -20,10 +20,10 @@ class CreateSection10sTable extends Migration
         Module::generate("Section_10s", 'section_10s', 'title', 'fa-cube', [
             ["title", "Title", "String", false, "", 0, 256, false],
             ["text", "Text", "String", false, "", 0, 256, false],
+            ["image", "Background Image", "Image", false, "", 0, 0, false],
             ["is_title", "Is Title", "Checkbox", false, "", 0, 0, false],
             ["is_left", "Is Left", "Checkbox", false, "", 0, 0, false],
             ["is_right", "Is Right", "Checkbox", false, "", 0, 0, false],
-            ["image", "Background Image", "Image", false, "", 0, 0, false],
             ["statistic_prefix", "Statistic Prefix", "String", false, "", 0, 2, false],
             ["statistic_number", "Statistic Number", "String", false, "", 0, 256, false],
             ["statistic_sufix", "Statistic Sufix", "String", false, "", 0, 2, false],

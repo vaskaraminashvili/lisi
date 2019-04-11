@@ -12,14 +12,19 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Section_3 extends Model
 {
     use SoftDeletes;
-	
+
 	protected $table = 'section_3s';
-	
+
 	protected $hidden = [
-        
+
     ];
 
 	protected $guarded = [];
 
 	protected $dates = ['deleted_at'];
+
+    public function partners()
+    {
+        return $this->hasMany('App\Models\Partner');
+    }
 }

@@ -26,6 +26,7 @@
 						@la_display($module, 'title')
 						@la_display($module, 'image')
 						@la_display($module, 'active')
+						@la_display($module, 'section_3_id')
 					</div>
 				</div>
 			</div>

@@ -33,7 +33,6 @@
 					@la_form($module)
 					
 					{{--
-					@la_input($module, 'image')
 					@la_input($module, 'contact_title')
 					@la_input($module, 'contact_number')
 					@la_input($module, 'contact_text')
@@ -45,6 +44,9 @@
 					@la_input($module, 'is_title')
 					@la_input($module, 'room_name')
 					@la_input($module, 'meter')
+					@la_input($module, 'image')
+					@la_input($module, 'landing_id')
+					@la_input($module, 'active')
 					--}}
                     <br>
 					<div class="form-group">

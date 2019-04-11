@@ -28,7 +28,7 @@
 						@la_display($module, 'background_image')
 						@la_display($module, 'landing_id')
 						@la_display($module, 'active')
-						@la_display($module, 'slide')
+						@la_display($module, 'slider')
 					</div>
 				</div>
 			</div>

@@ -36,6 +36,7 @@
 					@la_input($module, 'title')
 					@la_input($module, 'image')
 					@la_input($module, 'active')
+					@la_input($module, 'section_3_id')
 					--}}
                     <br>
 					<div class="form-group">

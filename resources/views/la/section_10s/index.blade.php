@@ -61,10 +61,10 @@
 					{{--
 					@la_input($module, 'title')
 					@la_input($module, 'text')
+					@la_input($module, 'image')
 					@la_input($module, 'is_title')
 					@la_input($module, 'is_left')
 					@la_input($module, 'is_right')
-					@la_input($module, 'image')
 					@la_input($module, 'statistic_prefix')
 					@la_input($module, 'statistic_number')
 					@la_input($module, 'statistic_sufix')

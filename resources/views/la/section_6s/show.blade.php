@@ -23,7 +23,6 @@
 						<h4>General Info</h4>
 					</div>
 					<div class="panel-body">
-						@la_display($module, 'image')
 						@la_display($module, 'contact_title')
 						@la_display($module, 'contact_number')
 						@la_display($module, 'contact_text')
@@ -35,6 +34,9 @@
 						@la_display($module, 'is_title')
 						@la_display($module, 'room_name')
 						@la_display($module, 'meter')
+						@la_display($module, 'image')
+						@la_display($module, 'landing_id')
+						@la_display($module, 'active')
 					</div>
 				</div>
 			</div>

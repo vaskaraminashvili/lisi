@@ -18,20 +18,20 @@ class CreateSection6sTable extends Migration
     public function up()
     {
         Module::generate("Section_6s", 'section_6s', 'title', 'fa-cube', [
-            ["image", "Room Image", "Image", false, "", 0, 0, false],
             ["contact_title", "Contact Title", "String", false, "", 0, 256, false],
             ["contact_number", "Contact Number", "String", false, "", 0, 256, false],
             ["contact_text", "Contact Small Text", "Address", false, "", 0, 256, false],
             ["contact_image", "Contact Image", "Image", false, "", 0, 0, false],
             ["is_contact", "Is Contact", "Checkbox", false, "0", 0, 0, false],
-            ["landing_id", "Landing", "Dropdown", false, "", 0, 0, false, "@landings"],
-            ["active", "Active", "Checkbox", false, "1", 0, 0, false],
             ["title", "Title", "String", false, "", 0, 256, false],
             ["text", "Text", "Textarea", false, "", 0, 0, false],
             ["sub_title", "Sub Title", "String", false, "", 0, 256, false],
             ["is_title", "Is Title", "Checkbox", false, "0", 0, 0, false],
             ["room_name", "Room Name", "String", false, "", 0, 256, false],
             ["meter", "Room Square Meter", "String", false, "", 0, 256, false],
+            ["image", "Room Image", "Image", false, "", 0, 0, false],
+            ["landing_id", "Landing", "Dropdown", false, "", 0, 0, false, "@landings"],
+            ["active", "Active", "Checkbox", false, "1", 0, 0, false],
         ]);
 		
 		/*

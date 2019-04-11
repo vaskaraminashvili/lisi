@@ -21,6 +21,7 @@ class CreatePartnersTable extends Migration
             ["title", "Title", "String", false, "", 0, 256, false],
             ["image", "Image", "Image", false, "", 0, 0, false],
             ["active", "Active", "Checkbox", false, "1", 0, 0, false],
+            ["section_3_id", "Section", "Dropdown", false, "", 0, 0, false, "@section_3s"],
         ]);
 		
 		/*

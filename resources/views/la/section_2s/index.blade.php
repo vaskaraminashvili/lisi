@@ -64,7 +64,7 @@
 					@la_input($module, 'background_image')
 					@la_input($module, 'landing_id')
 					@la_input($module, 'active')
-					@la_input($module, 'slide')
+					@la_input($module, 'slider')
 					--}}
 				</div>
 			</div>

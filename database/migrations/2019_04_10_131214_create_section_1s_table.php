@@ -18,6 +18,7 @@ class CreateSection1sTable extends Migration
     public function up()
     {
         Module::generate("Section_1s", 'section_1s', 'title', 'fa-cube', [
+            ["number", "Number", "String", false, "", 0, 256, false],
             ["title", "Title", "String", false, "", 0, 256, false],
             ["small_title", "Small Title", "String", false, "", 0, 256, false],
             ["text", "Text", "String", false, "", 0, 256, false],

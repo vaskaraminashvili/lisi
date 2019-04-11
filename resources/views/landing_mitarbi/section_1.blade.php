@@ -9,16 +9,8 @@
                     @foreach ($data as $key => $modul)
                         <li data-menuanchor="{{$key}}" class=""><a href="#{{$key}}">{{ucfirst(str_replace('_' , ' ', $key))}}</a></li>
                     @endforeach
-{{--                     <li data-menuanchor="section_1" class="active"><a href="#section_1">First section</a></li>
-                    <li data-menuanchor="section_2"><a href="#section_2">Second section</a></li>
-                    <li data-menuanchor="section_3"><a href="#section_3">About section</a></li>
-                    <li data-menuanchor="section_4"><a href="#section_4">Project h section</a></li>
-                    <li data-menuanchor="section_5"><a href="#section_5">Project Summary</a></li>
-                    <li data-menuanchor="section_6"><a href="#section_6">Project Summary</a></li>
-                    <li data-menuanchor="section_7"><a href="#section_7">Flat</a></li>
-                    <li data-menuanchor="section_8"><a href="#section_8">footer</a></li> --}}
                 </ul>
-                <div class="text-right menu_phone"><i class="fas fa-phone fa-flip-horizontal"></i> +38044 556 77 88</div>
+                <div class="text-right menu_phone"><i class="fas fa-phone fa-flip-horizontal"></i> {{$dat->number}}</div>
             </div>
         </nav>
         <div class="intro d-flex">

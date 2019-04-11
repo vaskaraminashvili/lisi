@@ -23,7 +23,7 @@ class CreateSection2sTable extends Migration
             ["background_image", "Background", "Image", false, "", 0, 0, false],
             ["landing_id", "Landing", "Dropdown", false, "", 0, 0, false, "@landings"],
             ["active", "Active", "Checkbox", false, "1", 0, 0, false],
-            ["slide", "Slide Images", "Multiselect", false, "", 0, 0, false, "@uploads"],
+            ["slider", "Slider", "Files", false, "", 0, 0, false],
         ]);
 		
 		/*

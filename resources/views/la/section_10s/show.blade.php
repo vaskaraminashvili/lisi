@@ -25,10 +25,10 @@
 					<div class="panel-body">
 						@la_display($module, 'title')
 						@la_display($module, 'text')
+						@la_display($module, 'image')
 						@la_display($module, 'is_title')
 						@la_display($module, 'is_left')
 						@la_display($module, 'is_right')
-						@la_display($module, 'image')
 						@la_display($module, 'statistic_prefix')
 						@la_display($module, 'statistic_number')
 						@la_display($module, 'statistic_sufix')

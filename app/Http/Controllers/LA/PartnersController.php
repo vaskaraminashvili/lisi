@@ -23,7 +23,7 @@ class PartnersController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title';
-	public $listing_cols = ['id', 'title', 'image', 'active'];
+	public $listing_cols = ['id', 'title', 'image', 'active', 'section_3_id'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

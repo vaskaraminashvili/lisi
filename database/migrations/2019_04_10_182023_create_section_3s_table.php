@@ -20,8 +20,8 @@ class CreateSection3sTable extends Migration
         Module::generate("Section_3s", 'section_3s', 'title', 'fa-cube', [
             ["title", "Title", "String", false, "", 0, 256, false],
             ["text", "Text", "String", false, "", 0, 256, false],
-            ["slide", "Background Slide", "Multiselect", false, "", 0, 0, false, "@uploads"],
-            ["partners", "Partners", "Multiselect", false, "", 0, 0, false, ["bmw","lis"]],
+            ["slide", "Background Slide", "Image", false, "", 0, 0, false],
+            ["partners", "Partners", "Multiselect", false, "", 0, 0, false, "@partners"],
             ["landing_id", "Landing", "Dropdown", false, "", 0, 0, false, "@landings"],
             ["active", "Active", "Checkbox", false, "1", 0, 0, false],
         ]);

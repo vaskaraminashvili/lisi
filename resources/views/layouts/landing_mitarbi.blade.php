@@ -34,7 +34,7 @@
 </head>
 <body>
 
-{{--     <div class="socials">
+    <div class="socials">
         <ul>
             <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -56,26 +56,10 @@
             <div class="downArrow bounce">
                     <i class="fas fa-angle-down text-white"></i>
             </div>
-            <div class="partners">
-                <h3 class="text-white">Our Partner Companies</h3>
-                <div class="partner__logos">
-                    <div>
-                        <img class="img-fluid" src="{{ asset('assets/tbc.png') }}" alt="" />
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="{{ asset('assets/lisi.png') }}" alt="" />
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="{{ asset('assets/bmw.png') }}" alt="" />
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="{{ asset('assets/slack.png') }}" alt="" />
-                    </div>
-                </div>
-            </div>
+
         </div>
 
-    </div> --}}
+    </div>
 
 <div id="fullpage">
     @yield('content')
@@ -84,6 +68,7 @@
         $(document).ready(function() {
           $('#fullpage').fullpage({
             // menu: '#myMenu',
+            dragAndMove: true,
             anchors: [
             @foreach ($anchors as $anchor)
                 '{{$anchor}}' ,
@@ -105,12 +90,12 @@
 
             },
             onLeave : function(index, nextIndex, direction){
-                if (nextIndex.anchor == 'footer') {
+                if (nextIndex.anchor == 'section_12') {
                     $('.feedback').addClass('move-up');
                 }else{
                     $('.feedback').removeClass('move-up');
                 }
-                if(nextIndex.anchor == 'thirdpage'){
+                if(nextIndex.anchor == 'section_3'){
                     $('.partners').fadeIn('slow');
                 }else{
                     $('.partners').fadeOut('slow');
@@ -118,7 +103,7 @@
             },
             afterLoad: function(index, nextIndex, direction){
                 // console.log(nextIndex.anchor);
-                if (nextIndex.anchor == 'firstPage') {
+                if (nextIndex.anchor == 'section_1') {
                     $('.downArrow').fadeIn('slow');
                 }else{
                     $('.downArrow').fadeOut('slow');

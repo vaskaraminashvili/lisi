@@ -23,7 +23,7 @@ class Section_2sController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title';
-	public $listing_cols = ['id', 'title', 'text', 'background_image', 'landing_id', 'active', 'slide'];
+	public $listing_cols = ['id', 'title', 'text', 'background_image', 'landing_id', 'active', 'slider'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns
