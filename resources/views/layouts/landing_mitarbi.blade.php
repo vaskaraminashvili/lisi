@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Kokhta Mitarbi</title>
     <!-- //full page css download after -->
     <!-- // jquery donwload -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,14 @@
     <script src="{{ asset('js/jquery.paroller.js') }}"></script>
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/jquery.animateNumber.js') }}"></script>
-    <script src="{{ asset('js/fullpage.js') }}"></script>
+    {{-- <script src="{{ asset('js/fullpage.js') }}"></script> --}}
     <script src="{{ asset('js/siema.min.js') }}"></script>
     <script src="{{ asset('js/landing.js') }}"></script>
     <script src="{{ asset('js/slick.js') }}"></script>
     <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.morecontent.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
@@ -34,16 +37,16 @@
 </head>
 <body>
 
-    <div class="socials">
+    <div class="d-none d-lg-flex socials_lisi">
         <ul>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="{{$socials->facebook}}" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="{{$socials->twitter}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="{{$socials->instagram}}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="{{$socials->youtube}}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="{{$socials->email}}" target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </div>
-    <div class="feedback">
+    <div class="d-none d-md-block feedback">
         <div class="feedback__buttons d-flex justify-content-end">
             <a href="#" id="popup__toggle" class="d-block" onclick="return true;">
                 <div class="circlephone" style="transform-origin: center;"></div>
@@ -52,7 +55,7 @@
                 <div class="img-circleblock" style="transform-origin: center;"></div>
                 </div>
             </a>
-            <a class="btn call btn-brand">FeedBack</a>
+            <a class="btn call btn-brand activator">FeedBack</a>
             <div class="downArrow bounce">
                     <i class="fas fa-angle-down text-white"></i>
             </div>
@@ -63,12 +66,13 @@
 
 <div id="fullpage">
     @yield('content')
+    @include('landing.feedback')
 </div>
     <script>
         $(document).ready(function() {
           $('#fullpage').fullpage({
             // menu: '#myMenu',
-            dragAndMove: true,
+            autoScrolling: false,
             anchors: [
             @foreach ($anchors as $anchor)
                 '{{$anchor}}' ,
@@ -77,16 +81,13 @@
             controlArrows : false,
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
-            // navigationPosition: 'left',
-            // navigationTooltips: ['First page', 'Second page', 'Third and last page' , 'project higphlits'],
-            scrollBar: true,
             afterRender: function(index, nextIndex, direction){
-              var el = $('.intro');
-              el.paroller({
-                factor: 0.5,
-                type: 'background',
-                direction: 'vertical'
-              });
+              // var el = $('.intro');
+              // el.paroller({
+              //   factor: 0.5,
+              //   type: 'background',
+              //   direction: 'vertical'
+              // });
 
             },
             onLeave : function(index, nextIndex, direction){
@@ -108,35 +109,35 @@
                 }else{
                     $('.downArrow').fadeOut('slow');
                 }
-
-                if (nextIndex.anchor == 'summary') {
-                    $('.n_animate span').animateNumber({ number: 165 } , 500);
-                }
-                if (nextIndex.anchor == 'invest') {
-                    $('.stat_anime .stat_anime-number').animateNumber({ number: 165 } , 500);
-                }
-                if (nextIndex.anchor == 'developer') {
-                    $('.stat_anime .stat_anime-number').animateNumber({ number: 50 } , 500);
-                }
+                @stack('scripts')
+                // if (nextIndex.anchor == 'summary') {
+                //     $('.n_animate span').animateNumber({ number: 165 } , 500);
+                // }
+                // if (nextIndex.anchor == 'invest') {
+                //     $('.stat_anime .stat_anime-number').animateNumber({ number: 165 } , 500);
+                // }
+                // if (nextIndex.anchor == 'developer') {
+                //     $('.stat_anime .stat_anime-number').animateNumber({ number: 50 } , 500);
+                // }
 
             },
             /* We need reinitialize paroller on window resize event */
             afterResize: function() {
-              var el = $('.intro');
-              el.paroller({
-                factor: 0.5,
-                type: 'background',
-                direction: 'vertical'
-              });
+              // var el = $('.intro');
+              // el.paroller({
+              //   factor: 0.5,
+              //   type: 'background',
+              //   direction: 'vertical'
+              // });
             }
           });
 
             AOS.init();
             // sieam sliders
-                new Siema({
-                  selector: '.siema',
-                  duration: 200,
-                });
+                // new Siema({
+                //   selector: '.siema',
+                //   duration: 200,
+                // });
             // end sieam sliders
         });
     </script>

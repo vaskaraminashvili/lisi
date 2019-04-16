@@ -23,7 +23,7 @@ class Section_5sController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title';
-	public $listing_cols = ['id', 'title', 'text', 'is_title', 'statistic_prefix', 'statistic_number', 'statistic_sufix', 'statistic_text', 'landing_id', 'background_image', 'active'];
+	public $listing_cols = ['id', 'title', 'text', 'statistic_number_1', 'statistic_text_1', 'statistic_number_2', 'statistic_text_2', 'statistic_number_3', 'statistic_text_3', 'statistic_number_4', 'statistic_text_4', 'statistic_number_5', 'statistic_text_5', 'statistic_number_6', 'statistic_text_6', 'landing_id', 'background_image', 'active'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

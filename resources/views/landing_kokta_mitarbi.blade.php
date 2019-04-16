@@ -1053,10 +1053,10 @@
 
             AOS.init();
             // sieam sliders
-                new Siema({
-                  selector: '.siema',
-                  duration: 200,
-                });
+                // new Siema({
+                //   selector: '.siema',
+                //   duration: 200,
+                // });
             // end sieam sliders
         });
     </script>

@@ -1,4 +1,4 @@
-
-/* ================== Homepage + Admin Routes ================== */
-
-require __DIR__.'/admin_routes.php';
+
+/* ================== Homepage + Admin Routes ================== */
+
+require __DIR__.'/admin_routes.php';

@@ -2,7 +2,7 @@
     <div class="section fp-auto-height" id="section11">
         <div class="d-flex intro footer">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row row_1">
                     <div class="col-xl-4">
                         <div class="footer-info">
                             <div class="email mb-20">
@@ -35,30 +35,33 @@
                         </div><!-- /.footer-text -->
                     </div><!-- /.col-xl-4 -->
                 </div>
-                <div class="row">
+                <div class="row row_2">
                     <div class="footer-nav">
                         <ul id="" style="">
-                                @foreach ($data as $key => $modul)
-                                    <li data-menuanchor="{{$key}}" class=""><a href="#{{$key}}">{{ucfirst(str_replace('_' , ' ', $key))}}</a></li>
-                                @endforeach
+                           @foreach ($data as $key => $modul)
+                             @if (in_array($key , $top_nav))
+                               <li data-menuanchor="{{$key}}" class=""><a href="#{{$key}}">{{ucfirst(str_replace('_' , ' ', $key))}}</a></li>
+                             @endif
+
+                           @endforeach
 
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row_3">
                     <div class="col-12">
-                        <div class="footer-copyright">
-                            <div class="footer-rights">
+                        <div class="row footer-copyright">
+                            <div class=" col-md-6 mt-3 mt-md-0 footer-rights">
                                 <span>©2019 LISI-DEVELOPMENT</span>
                                 <span>ALL RIGHTS ON INTERNET ASSETS</span>
                             </div>
-                            <div class="footer-socials">
+                            <div class=" col-md-6 footer-socials_lisi">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        <li><a href="{{$socials->facebook}}" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="{{$socials->twitter}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="{{$socials->instagram}}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="{{$socials->youtube}}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="{{$socials->email}}" target="_blank"><i class="fas fa-envelope"></i></a></li>
                                     </ul>
                             </div>
                         </div><!-- /.footer-copyright -->

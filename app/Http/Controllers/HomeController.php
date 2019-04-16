@@ -21,10 +21,7 @@ class HomeController extends Controller
 
     public function index(){
 
-        $sliders= Home_slider::with('image')->get();
-        $green_zones= Green_zone::whereHas('tag', function($q){
-          $q->where('title' , 'greenzone');
-        })->where('active', 1)->get();
+        return view('welcome' );
         return view('welcome' ,compact('navigation' , 'sliders','green_zones'));
     }
 

@@ -1,0 +1,10 @@
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 14px;
+    width: 14px;
+    background: #EADF26;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    height: 6px;
+    width: 6px;
+
+}

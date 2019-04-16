@@ -3,14 +3,14 @@
         <div class="d-flex intro">
            <div class="container-fluid">
                <div class="row">
-                    <div class="col-12">
+                    <div class="offset-md-1 col-md-10">
                         <div class="buildings-title-section">
                             <h2 class="text-left">{{$dat['title']->title}}</h2>
                         </div><!-- /.buildings-title -->
                     </div><!-- /.col -->
                </div><!-- /.row -->
                <div class="row">
-                    <div class="col-12">
+                    <div class="offset-md-1 col-md-10">
                         <div class="buildings-section__slider">
                             @foreach ($dat as $key => $building)
                             {{-- {{dd($building)}} --}}

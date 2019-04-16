@@ -1,19 +1,38 @@
 
 @media only screen and  (max-width: 575.98px) {
     .flat-title {
-        width: 250px;
+        width: 90%;
         left: 5%;
     }
+    .footer-socials_lisi ul {
+        width: 100%;
+    }
     .flat-title h2 {
-        font-size: 25px;
-        padding: 10px 16px;
+        font-size: 17px !important;
+        padding: 10px 36px;
     }
     .flat-text {
         padding: 70px 50px 20px 50px;
         top: -70px;
     }
     .flat-text p {
-        font-size: 16px;
+        font-size: 14px !important;
+    }
+    .flat-wrap:after {
+        width: 200px;
+        height: 150px;
+        right: 0px;
+    }
+    .green_box , .gray_box{
+        width: 140px;
+        height: 140px;
+    }
+    #section16 .intro {
+        padding: 0 10px !important;
+        margin-bottom: 0px !important;
+    }
+    .developer-statistic{
+        margin-bottom: 25px;
     }
 }
 
@@ -29,18 +48,23 @@
 
 
 @media only screen and  (min-width: 992px) and (max-width: 1199.98px) {
-
+    .flat-plan-row2{
+        margin-bottom: 30px;
+    }
+    #section13 .intro {
+        padding: 0 66px;
+    }
 }
 
 
 @media only screen and  (min-width: 1200px) and (max-width: 1366.9px) {
-
+    #section13 .intro {
+        padding: 0 66px;
+    }
     .four-season__input {
         max-width: 320px;
     }
-    .four-season__text p {
-        font-size: 22px;
-    }
+
 
     .chair_pointer {
         left: 30%;
@@ -60,6 +84,9 @@
     .four-season__img{
         /*max-width: 670px;*/
         max-height: 700px;
+    }
+    .houseInterior__right {
+        margin: 100px 0;
     }
 }
 @media only screen and  (max-width: 992px) {
@@ -115,24 +142,238 @@
     .statistic {
         margin-bottom: 5px;
     }
-}
-@media only screen and   (max-width: 1366.9px) {
+    .project-summary__wrap .summary__text-wrap {
+        padding: 15px 15px;
+    }
+    #section12 .intro {
+        padding: 20px 0;
+
+    }
+     #section12 .intro h3 {
+        font-size: 14px;
+    }
+    .flat-plan .flat-description {
+        font-size: 14px;
+    }
+    .flat-room {
+        height: auto;
+    }
+    .flat-plan-row2{
+        margin-bottom: 30px;
+    }
+    #section13 .intro {
+        padding: 0 16px;
+    }
+    .intro .buildings-section__slider p {
+        font-size: 14px;
+    }
+    .houseInterior__middle form {
+        padding: 0 10px 0 0;
+    }
+
+} /* max wid 992 */
+@media only screen and  (max-width:  1919.8px) {
     #menu {
         padding: 0 20px;
     }
+    .intro h1 {
+        font-size: 25px;
+    }
+    .intro h3 {
+        font-size: 20px;
+    }
+    .main_section .intro__text p {
+        margin-top: 10px;
+    }
+    /*section 1  not id  !!section!!*/
+    .main_section .intro__text {
+      margin-top: 90px;
+    }
+    .main_section .intro__text button {
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .menu-logo{
+        position: relative;
+        top: -25px;
+    }
+    .visit_our_projects {
+        margin-top: 26px;
+    }
+    /* end section 1  not id  !!section!!*/
+
+    /* end section 2  not id  !!section!!*/
+    .four-season__text h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .four-season__text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    /* end section 2  not id  !!section!!*/
+
+    /* end section 3  not id  !!section!!*/
+    .about-project .about-project__title {
+        font-size: 25px;
+    }
+    .about-project .about-project__text {
+        font-size: 16px;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .about-project__btn{
+        margin-top: 20px;
+    }
+    .about-project__text .mrc-content{
+        text-align: -webkit-auto;
+    }
+    /* end section 3  not id  !!section!!*/
+    /* end section 4  not id  !!section!!*/
+    .project-highlights__wrap {
+        width: 200px;
+
+    }
+    .project-highlights__wrap {
+        min-height: 220px;
+    }
+    .project-highlights__header h2.project-highlights__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .project-highlights__div:before{
+      left:6%;
+    }
+    .project-highlights__row .project-highlights__div:last-child:before {
+        left: 17%;
+    }
+    /* end section 4  not id  !!section!!*/
+    /* end section 5  not id  !!section!!*/
+    .intro .project-summary__wrap h3.n_animate {
+        font-size: 60px;
+    }
+    /* end section 5  not id  !!section!!*/
+    /* end section 6  not id  !!section!!*/
+    .flat-plan-call {
+        color: #FFF;
+        padding: 0;
+    }
+    .intro .flat-plan-call p {
+        font-size: 16px;
+        line-height: 17px;
+
+    }
+    /* end section 6  not id  !!section!!*/
+    /* end section 7  not id  !!section!!*/
+    .buildings-title-section {
+        margin-bottom: 20px;
+    }
+    .buildings-section__slider {
+        padding: 40px 20px;
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+        margin-bottom: 50px;
+        border-top-left-radius: 70px;
+    }
+    .intro .buildings-section__slider p {
+        font-size: 16px;
+    }
+    /* end section 7  not id  !!section!!*/
+    /* end section 8  not id  !!section!!*/
+    .flat-title h2 {
+        font-size: 25px;
+    }
+    .flat-text p {
+        font-size: 16px;
+    }
+    /* end section 8  not id  !!section!!*/
+    /* end section 9  not id  !!section!!*/
+    .houseInterior__left img {
+        max-height: 230px;
+    }
+    .houseInterior__left .img1 {
+        z-index: 2;
+        top: 80px;
+        left: -50px;
+    }
+    .houseInterior__left .img2 {
+        z-index: 3;
+        bottom: 100px;
+        left: 0%;
+    }
+    .houseInterior__left .img3 {
+        z-index: 4;
+        right: -90px;
+        bottom: 40%;
+    }
+    .houseInterior__right .houseInterior__text {
+        margin-bottom: 20px;
+    }
+    .houseInterior__right .houseInterior__title {
+         margin-bottom: 10px;
+    }
+    /* end section 9  not id  !!section!!*/
+    /* end section 10  not id  !!section!!*/
+    .featured-image-upper h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .featured-image-upper p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .featured-image-upper button {
+        padding: 10px 30px;
+        margin-top: 30px;
+
+    }
+    /* end section 10  not id  !!section!!*/
+    /* end section 11  not id  !!section!!*/
+    .developer-title {
+        font-size: 25px;
+    }
+    .developer-statistic__number .stat_anime {
+        font-size: 50px;
+    }
+    #section16 .intro {
+        padding: 0 60px;
+        margin-bottom: 120px;
+    }
+
+    /* end section 11  not id  !!section!!*/
+    /* end section 12  not id  !!section!!*/
+    .footer .row_1{
+        margin-bottom:  20px;
+    }
+    .footer-info {
+        font-size: 20px;
+    }
+    .footer-text-top {
+        margin-bottom: 16px;
+    }
+    .footer-copyright {
+        padding:0px 50px;
+    }
+    .footer-nav {
+        padding: 0 20px;
+    }
+    /* end section 12  not id  !!section!!*/
+
     #section3 .intro {
-        padding: 0px 20px;
+        background-color: #fff;
+        padding: 50px 30px;
     }
     #section1 .intro {
         padding: 0px 20px;
     }
     #section2 .intro {
-        padding: 0px 60px;
+        /*padding: 0px 60px;*/
         overflow-x: hidden;
     }
 
+
     #section4 .intro {
-        padding: 0px 0px;
+        padding: 60px 30px;
     }
     #section5 .intro {
         padding: 0;
@@ -150,4 +391,11 @@
     }
 
 
+}
+
+@media only screen and  (min-width:  1915.8px) {
+    #section3 .intro {
+        background-color: #fff;
+        padding: 120px 80px;
+    }
 }

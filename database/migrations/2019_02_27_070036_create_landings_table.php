@@ -19,18 +19,13 @@ class CreateLandingsTable extends Migration
     {
         Module::generate("Landings", 'landings', 'title', 'fa-cube', [
             ["title", "Title", "String", false, "", 0, 256, false],
-            ["section_1", "Section 1", "Checkbox", false, "1", 0, 0, false],
-            ["section_2", "Section 2", "Checkbox", false, "1", 0, 0, false],
-            ["section_3", "Section 3", "Checkbox", false, "1", 0, 0, false],
-            ["section_4", "Section 4", "Checkbox", false, "1", 0, 0, false],
-            ["section_5", "Section 5", "Checkbox", false, "1", 0, 0, false],
-            ["section_6", "Section 6", "Checkbox", false, "1", 0, 0, false],
-            ["section_7", "Section 7", "Checkbox", false, "1", 0, 0, false],
-            ["section_8", "Section 8", "Checkbox", false, "1", 0, 0, false],
-            ["section_9", "Section 9", "Checkbox", false, "1", 0, 0, false],
-            ["section_10", "Section 10", "Checkbox", false, "1", 0, 0, false],
-            ["section_11", "Section 11", "Checkbox", false, "1", 0, 0, false],
-            ["section_12", "Section 12", "Checkbox", false, "1", 0, 0, false],
+            ["landing_home", "Landing_home", "Checkbox", false, "true", 0, 0, false],
+            ["season", "Season", "Checkbox", false, "true", 0, 0, false],
+            ["about_project", "About Project", "Checkbox", false, "true", 0, 0, false],
+            ["project_info", "Project Info", "Checkbox", false, "true", 0, 0, false],
+            ["project_summary", "Project Summary", "Checkbox", false, "true", 0, 0, false],
+            ["landing_apartment", "Landing  Apartment", "Checkbox", false, "true", 0, 0, false],
+            ["footer", "Footer", "Checkbox", false, "true", 0, 0, false],
         ]);
 		
 		/*

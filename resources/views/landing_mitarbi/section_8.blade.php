@@ -1,8 +1,8 @@
 {{-- {{dd($dat)}} --}}
     <div class="section flat" id="section5">
         @foreach ($dat as $key => $slide)
-            <div  class="slide" id="slide{{$key}}" data-anchor="slide{{$key}}">
-                <div class="d-flex intro" style="background: url({{ asset($slide->image) }})">
+            <div  class="" >
+                <div class="d-flex intro" style="background: url({{ asset($slide->image) }}); height: 100vh;">
                     <div class="container-fluid">
                         <div class="row">
 

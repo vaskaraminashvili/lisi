@@ -1,0 +1,18 @@
+html,body {
+    background: black;
+    font-family: 'Noto+Sans+JP', sans-serif;
+}
+.container {
+    
+}
+.content {
+    text-align:center;
+    margin-top:240px;
+}
+.content h1 {
+    font-size:80px;
+    color:white;
+}
+.content h4 {
+    color:white;
+}

@@ -23,7 +23,7 @@ class Section_6sController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'title';
-	public $listing_cols = ['id', 'contact_title', 'contact_number', 'contact_text', 'contact_image', 'is_contact', 'title', 'text', 'sub_title', 'is_title', 'room_name', 'meter', 'image', 'landing_id', 'active'];
+	public $listing_cols = ['id', 'title', 'text', 'sub_title', 'image', 'room_name_1', 'meter_1', 'room_name_2', 'meter_2', 'room_name_3', 'meter_3', 'room_name_4', 'meter_4', 'room_name_5', 'meter_5', 'room_name_6', 'meter_6', 'contact_title', 'contact_number', 'contact_text', 'contact_image', 'is_contact', 'landing_id', 'active'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns
